@@ -1,0 +1,68 @@
+/* Contact style */
+
+.contact {
+    margin-top: 200px;
+}
+
+.contact .main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .form,
+.contact .message {
+    padding: 1em;
+}
+
+.contact .message {
+    order: 1;
+}
+
+.contact .form {
+    order: 2;
+}
+
+.contact .form input,
+.contact .form textarea {
+    width: 100%;
+}
+
+.contact .form textarea {
+    padding: 1em;
+}
+
+.contact .form input[type=submit] {
+    width: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .contact .main-content {
+        display: block;
+    }
+
+    .contact {
+        margin-top: 18vh;
+    }
+
+    .contact .form,
+    .contact .message {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+
+    .contact .message {
+        padding-top: 1em;
+    }
+    
+    .contact .form textarea {
+        width: 85%;
+    }
+
+}
+
+.contact div.wpcf7-response-output {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}

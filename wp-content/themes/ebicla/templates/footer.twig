@@ -1,0 +1,102 @@
+
+        {% if not add_to_cart_page %}
+        <section id="notifications">
+            {{ function('do_shortcode', '[shop_messages]') }}
+        </section>
+        {% endif %}
+
+        <footer>
+        
+            <div class="container container-footer">
+
+                <div class="row">
+
+                    <section class="contact-info col-sm-4">
+
+                        <h3>Contact</h3>
+
+                        <div class="info">
+
+                            <div class="row">
+
+                                <p class="field-info"><i class="fas fa-phone"></i> <span class="text">Număr de telefon:</span></p>
+
+                                <p class="field-value">
+                                
+                                    <a href="tel:[{{ phone_number }}]">
+                                    
+                                        {{ phone_number }}
+                                        
+                                    </a>
+                                    
+                                </p>
+
+                            </div>
+
+                            <div class="row">
+                            
+                                <p class="field-info"><i class="fas fa-at"></i> <span class="text">Email:</span></p>
+
+                                <p class="field-value">
+                                
+                                    <a href="mailto:{{ email }}">
+                                    
+                                        {{ email }}
+                                        
+                                    </a>
+                                    
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="menu col-sm-4">
+
+                        <h3>Linkuri utile</h3>
+
+                        <div class="info">
+
+                            <nav>
+
+                                {% for item in menu_items %}
+                                    <a class="menu-row" title="{{ item.title }}" href="{{ item.url }}">
+                                        {{ item.title }}
+                                    </a>
+                                {% endfor %}
+
+                            </nav>
+
+                        </div>
+
+                    </section>
+
+                    <section class="contact-info col-sm-4">
+
+                        <h3>Urmăriti-ne</h3>
+
+                        <div class="info">
+
+                            <a href="{{ facebook_url }}" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+
+                            <a href="{{ twitter_url }}" title="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+
+                            <a href="{{ instagram_url }}" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        {{ function('wp_footer') }}
+
+    </body>
+
+</html>

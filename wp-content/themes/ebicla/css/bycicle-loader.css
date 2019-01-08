@@ -1,0 +1,300 @@
+.fill--none {
+    fill: none;
+  }
+  
+  .fill--blue {
+    fill: #03354a;
+  }
+  
+  .fill--lavender-dark {
+    fill: #8a7c85;
+  }
+  
+  .fill--lavender {
+    fill: #70626d;
+  }
+  
+  .fill--teal {
+    fill: #7bc1bf;
+  }
+  
+  .fill--teal-light {
+    fill: #cce4e3;
+  }
+  
+  .fill--yellow-dark {
+    fill: #ff5d00;
+  }
+  
+  .fill--yellow-light {
+    fill: #fff;
+  }
+  
+  .stroke--blue {
+    stroke: #002733;
+  }
+  
+  .stroke--2px {
+    stroke-width: 2px;
+  }
+  
+  .stroke--3px {
+    stroke-width: 3px;
+  }
+  
+  .stroke--dasharray {
+    stroke-dasharray: 0 5;
+  }
+  
+  .stroke--round {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .opacity--02 {
+    opacity: 0.2;
+  }
+  
+  .bicycle {
+    width: 150px;
+    height: 306px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  
+  .seat-highlight {
+    fill: none;
+    stroke: #fff;
+  }
+  
+  .chain-rings,
+  .wheel-front,
+  .wheel-rear,
+  .cogset-top,
+  .crankarm-left,
+  .crankarm-right,
+  .pedal-left,
+  .pedal-right,
+  .pedal-left-inner,
+  .pedal-right-inner {
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  
+  .chain-rings,
+  .wheel-front,
+  .wheel-rear,
+  .cogset-top,
+  .crankarm-left,
+  .crankarm-right,
+  .pedal-left,
+  .pedal-right {
+    -webkit-animation-name: spin;
+            animation-name: spin;
+  }
+  
+  .pedal-left-inner,
+  .pedal-right-inner {
+    -webkit-animation-name: pedal;
+            animation-name: pedal;
+  }
+  
+  .chain-rings,
+  .cogset-top,
+  .crankarm-left,
+  .crankarm-right,
+  .pedal-left,
+  .pedal-right,
+  .pedal-left-inner,
+  .pedal-right-inner {
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+  }
+  
+  .wheel-front,
+  .wheel-rear {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+  }
+  
+  .chain-move {
+    -webkit-animation: chain 0.075s linear forwards infinite;
+            animation: chain 0.075s linear forwards infinite;
+  }
+  
+  .chain-move--reverse {
+    animation-direction: reverse;
+  }
+  
+  .chain-rings,
+  .wheel-front,
+  .wheel-rear,
+  .cogset-top,
+  .pedal-right-inner,
+  .pedal-left-inner {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  
+  .wheel-front {
+    -webkit-transform-origin: 472.4px 240px;
+            transform-origin: 472.4px 240px;
+  }
+  
+  .wheel-rear {
+    -webkit-transform-origin: 121.7px 240.9px;
+            transform-origin: 121.7px 240.9px;
+  }
+  
+  .pedal-left-inner {
+    -webkit-transform-origin: 217.5px 226px;
+            transform-origin: 217.5px 226px;
+  }
+  
+  .pedal-right-inner {
+    -webkit-transform-origin: 318px 310px;
+            transform-origin: 318px 310px;
+  }
+  
+  .chain-rings {
+    -webkit-transform-origin: 268px 268.9px;
+            transform-origin: 268px 268.9px;
+  }
+  
+  .cogset-top {
+    -webkit-transform-origin: 121.7px 240.9px;
+            transform-origin: 121.7px 240.9px;
+  }
+  
+  .crankarm-right,
+  .crankarm-left,
+  .pedal-right,
+  .pedal-left {
+    -webkit-transform-origin: 268px 268px;
+            transform-origin: 268px 268px;
+  }
+  
+  .line-rear-wheel,
+  .line-front-wheel-long,
+  .line-front-wheel-short {
+    -webkit-animation: line-wheel 2.8s linear forwards infinite;
+            animation: line-wheel 2.8s linear forwards infinite;
+  }
+  
+  @-webkit-keyframes chain {
+    from {
+      -webkit-transform: translate3d(-2px, 0, 0);
+              transform: translate3d(-2px, 0, 0);
+    }
+    to {
+      -webkit-transform: translate3d(2px, 0, 0);
+              transform: translate3d(2px, 0, 0);
+    }
+  }
+  
+  @keyframes chain {
+    from {
+      -webkit-transform: translate3d(-2px, 0, 0);
+              transform: translate3d(-2px, 0, 0);
+    }
+    to {
+      -webkit-transform: translate3d(2px, 0, 0);
+              transform: translate3d(2px, 0, 0);
+    }
+  }
+  @-webkit-keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes pedal {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    25% {
+      -webkit-transform: rotate(-50deg);
+              transform: rotate(-50deg);
+    }
+    50% {
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg);
+    }
+    75% {
+      -webkit-transform: rotate(-290deg);
+              transform: rotate(-290deg);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+  @keyframes pedal {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    25% {
+      -webkit-transform: rotate(-50deg);
+              transform: rotate(-50deg);
+    }
+    50% {
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg);
+    }
+    75% {
+      -webkit-transform: rotate(-290deg);
+              transform: rotate(-290deg);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+  @-webkit-keyframes line-wheel {
+    0% {
+      -webkit-transform: translate3d(500px, 0, 0);
+              transform: translate3d(500px, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(-650px, 0, 0);
+              transform: translate3d(-650px, 0, 0);
+    }
+  }
+  @keyframes line-wheel {
+    0% {
+      -webkit-transform: translate3d(500px, 0, 0);
+              transform: translate3d(500px, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(-650px, 0, 0);
+              transform: translate3d(-650px, 0, 0);
+    }
+  }
+  @media (max-width: 520px) {
+    .bicycle {
+      -webkit-transform: translate3d(-50%, -50%, 0) scale(0.775);
+              transform: translate3d(-50%, -50%, 0) scale(0.775);
+    }
+  }
+  @media (max-width: 420px) {
+    .bicycle {
+      -webkit-transform: translate3d(-50%, -50%, 0) scale(0.5);
+              transform: translate3d(-50%, -50%, 0) scale(0.5);
+    }
+  }
+  

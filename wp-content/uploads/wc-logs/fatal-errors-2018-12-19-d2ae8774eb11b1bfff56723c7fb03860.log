@@ -1,0 +1,31 @@
+2018-12-19T03:13:05+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' în /home/ebiclaro/public_html/wp-content/themes/ebicla/homepage.php pe linia 52
+
+2018-12-19T03:13:06+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' în /home/ebiclaro/public_html/wp-content/themes/ebicla/homepage.php pe linia 52
+
+2018-12-19T03:13:07+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' în /home/ebiclaro/public_html/wp-content/themes/ebicla/homepage.php pe linia 52
+
+2018-12-19T03:13:08+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' în /home/ebiclaro/public_html/wp-content/themes/ebicla/homepage.php pe linia 52
+
+2018-12-19T03:13:10+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' în /home/ebiclaro/public_html/wp-content/themes/ebicla/homepage.php pe linia 52
+
+2018-12-19T03:13:10+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' în /home/ebiclaro/public_html/wp-content/themes/ebicla/homepage.php pe linia 52
+
+2018-12-19T03:13:11+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' în /home/ebiclaro/public_html/wp-content/themes/ebicla/homepage.php pe linia 52
+
+2018-12-19T03:13:12+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' în /home/ebiclaro/public_html/wp-content/themes/ebicla/homepage.php pe linia 52
+
+2018-12-19T03:13:26+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' în /home/ebiclaro/public_html/wp-content/themes/ebicla/homepage.php pe linia 52
+
+2018-12-19T03:28:55+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_title() in /home/ebiclaro/public_html/wp-content/themes/ebicla/functions/Helpers.php:87
+Stack trace:
+#0 /home/ebiclaro/public_html/wp-content/themes/ebicla/products.php(98): Get_Stock_info(Object(WC_Product_Simple))
+#1 /home/ebiclaro/public_html/wp-includes/template.php(690): require('/home/ebiclaro/...')
+#2 /home/ebiclaro/public_html/wp-includes/template.php(647): load_template('/home/ebiclaro/...', false)
+#3 /home/ebiclaro/public_html/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#4 /home/ebiclaro/public_html/wp-content/themes/ebicla/woocommerce/archive-product.php(16): get_template_part('products')
+#5 /home/ebiclaro/public_html/wp-includes/template-loader.php(74): include('/home/ebiclaro/...')
+#6 /home/ebiclaro/public_html/wp-blog-header.php(19): require_once('/home/ebiclaro/...')
+#7 /home/ebiclaro/public_html/index.php(17): require('/home/ebiclaro/...')
+#8 {main}
+  thrown în /home/ebiclaro/public_html/wp-content/themes/ebicla/functions/Helpers.php pe linia 87
+

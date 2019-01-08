@@ -1,0 +1,175 @@
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-ebicla">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavbar">
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>                        
+
+            </button>
+
+            <a class="navbar-brand" href="{{ function('site_url') }}">
+            
+                <img src="{{ function('bloginfo', 'template_url') }}/images/logo.svg" alt="ebicla.ro">
+
+            </a>
+
+        </div>
+
+        <form class="navbar-form navbar-left search" id="search-form">
+
+            <div class="input-group">
+
+                <input type="text" class="form-control" id="search-term" placeholder="Căutare" {{ search_value }}>
+
+                <div class="input-group-btn">
+
+                    <button class="btn btn-default" type="submit" id="search-go">
+
+                        <i class="glyphicon glyphicon-search"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+        <div class="collapse navbar-collapse" id="topNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+
+            {% for item in menu %}
+
+            <li {{ item.li_class }}>
+
+                    <a title="{{ item.title }}" href="{{ item.url }}">
+                        
+                        {% if item.icon == 'fas fa-shopping-cart' %}
+
+                            {% if cart_count > 0 %}
+
+                            <span class="red-bullet">
+
+                                <span class="cart-count">
+
+                                    {{ cart_count }}
+
+                                </span>
+
+                            </span>
+
+                            {% endif %}
+
+                            <span class="cart-price">
+
+                                {{ cart_price }}
+
+                            </span>
+
+                        {% endif %}
+
+                        {% if item.icon %}
+
+                            <i class="{{ item.icon }}"></i>
+
+                        {% endif %}
+
+                        <span class="menu-text">{{ item.title }}</span>
+                        
+                    </a>
+
+                </li>
+
+            {% endfor %}
+
+                {% if user_status %}
+
+                <li>
+
+                    <a class="not-spa" href="{{ logout_url }}">
+                        
+                        <i class="fas fa-sign-out-alt"></i>
+                        
+                        <span class="menu-text">Dezautentificare</span>
+                        
+                    </a>
+
+                </li>
+
+                {% endif %}
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-default navbar-ebicla-categories">
+
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="categoriesNavbar">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="categories-button">
+
+                        <button id="categories-burger" class="navbar-toggle collapsed">
+
+                            <span class="text">Categorii produse</span>
+
+                            <span class="burger">
+
+                                <span class="icon-bar"></span>
+                                
+                                <span class="icon-bar"></span>
+
+                                <span class="icon-bar"></span> 
+
+                            </span>
+
+                        </button>
+
+                    </li>
+
+                    <li class="mobile-not-visible {{ categories_li_class }}">
+
+                        <a title="produse" href="{{ all_products_url }}">
+
+                            Toate produsele
+
+                        </a>
+
+                    </li>
+
+                    {% for item in categories %}
+
+                    <li class="mobile-not-visible {{ item.li_class }}">
+
+                        <a title="{{ item.name }}" href="{{ item.url }}">
+                            
+                            {{ item.name }}
+                            
+                        </a>
+
+                    </li>
+
+                    {% endfor %}
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</nav>

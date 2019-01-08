@@ -1,0 +1,11 @@
+/* Terms style */
+
+.terms {
+    margin-top: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .terms {
+        margin-top: 18vh;
+    }
+}

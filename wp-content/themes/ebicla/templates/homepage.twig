@@ -1,0 +1,151 @@
+
+    <main class="homepage">
+
+        <div class="slider-container">
+        <div class="slider-control left inactive"></div>
+        <div class="slider-control right"></div>
+        <ul class="slider-pagi"></ul>
+        <div class="slider">
+            {% set index = 0 %}
+            {% for item in carousel %}
+            <div class="slide slide-{{ index }} active">
+            <div class="slide__bg" style="background-image:url('{{ item.image_url }}')"></div>
+            <div class="slide__content">
+                <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+                </svg>
+                <div class="slide__text">
+                <h2 class="slide__text-heading">{{ item.title }}</h2>
+                <p class="slide__text-desc">{{ item.description }}</p>
+                <a class="slide__text-link btn btn-primary btn-blue" href="{{ item.url }}">Vezi mai multe</a>
+                </div>
+            </div>
+            </div>
+            {% set index = index + 1 %}
+            {% endfor %}
+        </div>
+        </div>
+
+        <section id="last-products">
+
+            <div class="container">
+
+                <h2><span class="orange">Ultimele</span> produse adăugate</h2>
+
+                {% if last_added_products %}
+
+                    {% set index = 0 %}
+
+                    {% for item in last_added_products %}
+
+                        {% if (index % 4 == 0) %}
+
+                            <div class="row">
+
+                        {% endif %}
+
+                            <div class="col-sm-6 col-md-3">
+
+                                <div class="product">
+
+                                    <a class="nostyle" href="{{ item.permalink }}" title="{{ item.title }}">
+
+                                        <span class="product-info">
+
+                                            <h3>{{ item.title }}</h3>
+
+                                            <div class="image-div" style="background-image:url('{{ item.thumbnail }}');"></div>
+
+                                            <div class="center-alignment {{ item.price_class }}"><span class="price">{{ item.price }}</span></div>
+
+                                            <div class="buy">
+
+                                                <input type="hidden" value="1" class="quantity" name="quantity">
+
+                                                <div class="buy-item">
+
+                                                    <input type="hidden" class="product-id" value="{{ item.id }}">
+
+                                                    <button class="add-to-cart btn btn-red {{ item.button_class }}"><i class="fas fa-shopping-cart"></i> Adauga in cos</button>
+
+                                                </div>
+
+                                            </div>
+
+                                        </span>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            {% if (index % 4 == 3) %}
+
+                                </div>
+
+                            {% endif %}
+
+                        {% set index = index + 1 %}
+
+                    {% endfor %}
+
+                {% else %}
+
+                    <h3 class="center-alignment">Nu există produse pe acest site</h3>
+
+                {% endif %}
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="categories">
+
+            <div class="container">
+
+                <h2><span class="orange">Categorii</span> produse</h2>
+
+                <div class="row">
+
+                {% if categories %}
+
+                    {% for item in categories %}
+
+                    <div class="col-sm-6 col-md-4 category-parent">
+
+                        <div class="category" style="background-image:url('{{ item.thumbnail }}')">
+
+                            <a href="{{ item.link }}" class="not-spa" title="{{ item.title }}">
+
+                                <span class="category-info">
+
+                                    <h3>{{ item.title }}</h3>
+
+                                    <p class="description">{{ item.description }}</p>
+
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    {% endfor %}
+
+                {% else %}
+
+                    <h3 class="center-alignment">Nu există categorii pe acest site</h3>
+
+                {% endif %}
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>

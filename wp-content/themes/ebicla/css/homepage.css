@@ -1,0 +1,275 @@
+/* Homepage style */
+
+/* carousel */
+
+.homepage #homepageCarousel {
+    box-shadow: 0px 0px 10px black;
+}
+.homepage #homepageCarousel .item {
+    width: 100%;
+    margin-top: 20vh;
+    height: 80vh;
+    background-color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.homepage #homepageCarousel .carousel-control .glyphicon {
+    font-size: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .homepage #homepageCarousel .item {
+        margin-top: 14vh;
+        height: 86vh;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .homepage #homepageCarousel .item {
+        background-size: 100%;
+    }
+    .homepage #homepageCarousel .item .carousel-caption {
+        visibility: hidden;
+        padding-bottom: 0px;
+    }
+    .homepage #homepageCarousel .item:hover .carousel-caption {
+        visibility: visible;
+        transition: all 0.5s;
+        padding-bottom: 30px;
+    }
+}
+
+.homepage #homepageCarousel a.left.carousel-control {
+    background-image: none;
+    color: black;
+}
+
+.homepage #homepageCarousel a.right.carousel-control {
+    background-image: none;
+    color: black;
+}
+
+.homepage #homepageCarousel .carousel-caption {
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+}
+
+.homepage #homepageCarousel .carousel-caption a {
+    font-size: inherit;
+    color: #38c;
+}
+
+.homepage #homepageCarousel .carousel-caption a:hover {
+    text-decoration: none;
+}
+
+.homepage #homepageCarousel .carousel-caption p {
+    color: white;
+}
+
+
+/* categories */
+.homepage #categories {
+    margin: 2em 0;
+}
+
+.homepage #categories h2 {
+    margin: 1em;
+    text-align: center;
+}
+
+.homepage #categories h2 .orange {
+    color: #ff5d00;
+    font-size: inherit;
+}
+
+.homepage #categories h2 .orange::before {
+    content: "\f0ca";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    margin-right: 0.5em;
+    vertical-align: text-bottom;
+}
+
+.homepage #categories .category-parent {
+    padding: 1em;
+}
+
+.homepage #categories .category {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.homepage #categories .category a .category-info {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 0 1em;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-shadow: none;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+    .homepage #categories .category a .category-info {
+        position: absolute;
+    }
+}
+
+.homepage #categories .category:hover {
+    transition: all 0.3s;
+    transform:scale(1.1);
+}
+
+.homepage #categories .category:hover a .category-info {
+    display: block;
+    bottom: 0px;
+    width: 100%;
+    padding: 0 1em;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-shadow: none;
+    font-weight: normal;
+}
+
+.homepage #categories .category a .category-info h3 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.homepage #categories .category a .category-info p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1em;
+}
+
+/* Last products */
+
+.homepage #last-products h2 {
+    margin: 1em;
+    text-align: center;
+}
+
+.homepage #last-products h2 .orange {
+    color: #ff5d00;
+    font-size: inherit;
+}
+
+.homepage #last-products h2 .orange::before {
+    content: "\f206";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    margin-right: 0.5em;
+    vertical-align: text-bottom;
+}
+
+.homepage #last-products a:hover {
+    text-decoration: none;
+    color: initial;
+}
+
+.homepage #last-products .product {
+    padding: 1em;
+    transition: all 0.5s;
+}
+
+.homepage #last-products .product:hover {
+    box-shadow: 0px 0px 30px #9d9d9d;
+    transition: all 0.5s;
+}
+
+.homepage #last-products .product .product-info {
+    text-align: center;
+}
+
+.homepage #last-products .product .product-info .image-div {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 1em;
+}
+
+.homepage #last-products .product .product-info h3 {
+    color: #38c;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    margin: 1em 0;
+}
+
+.homepage #last-products .product .product-info .description {
+    margin: 0.5em auto;
+}
+
+.homepage #last-products .product .product-info .description p {
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.homepage #last-products .product div.variable {
+    margin: 2em 0 1em;
+}
+
+.homepage #last-products .product div.variable span.woocommerce-Price-amount.amount {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff5d00;
+}
+
+.homepage #last-products .product span.price {
+    text-align: center;
+    font-size: 1.25em;
+    vertical-align: middle;
+}
+
+.homepage #last-products .product .product-info .price del {
+    display: block;
+    color: #000;
+    cursor: pointer;
+}
+
+.homepage #last-products .product .product-info .price del span.woocommerce-Price-amount.amount {
+    text-align: center;
+    color: #2b2b2b;
+    cursor: pointer;
+}
+
+.homepage #last-products .product .product-info .price ins {
+    display: block;
+    color: #ff5d00;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.homepage #last-products .product .product-info .price del span.woocommerce-Price-amount.amount,
+.homepage #last-products .product .product-info .price del span.woocommerce-Price-currencySymbol {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.homepage #last-products .product .product-info .price ins span.woocommerce-Price-amount.amount {
+    font-size: 30px;
+    cursor: pointer;
+}

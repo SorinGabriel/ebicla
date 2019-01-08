@@ -1,0 +1,311 @@
+/*
+Theme Name: eBicla
+Author: Marica Sorin
+Description: eBicla online store theme
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+/*
+Color pallette:
+#000000 - black
+#2b2b2b - grey
+#ffffff - white
+#ff5d00 - orange
+#002733 - blue
+#f90000 - btn red
+#de0000 - btn dark red
+rgba(0,0,0,0.1) - border grey
+#38c - link blue
+#77a464 - green
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+* {
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.125em;
+    }
+    h2 {
+        font-size: 2.618em;
+    }
+    h3 {
+        font-size: 1.931em;
+    }
+    h4 {
+        font-size: 1.618em;
+    }
+    h5 {
+        font-size: 1.194em;
+    }
+    h6 {
+        font-size: 1em;
+    }
+}
+
+#wpadminbar {
+    display: none;
+}
+
+.ui-loader {
+    display: none;
+}
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a {
+    color: #38c;
+}
+
+.error-404 {
+    margin-top: 30vh;
+}
+
+@media screen and (min-width: 768px) {
+    .error-404 {
+        margin-top: 18vh;
+    }
+}
+
+.center-alignment {
+    text-align: center;
+}
+
+.price-new .sale-price,
+.price-new .sale-price-currency {
+    font-size: 30px;
+    color: #ff5d00;
+}
+
+.price-new .regular-price,
+.price-new .regular-price-currency {
+    font-size: 18px;
+    color: #2b2b2b;
+    text-decoration: line-through;
+}
+
+button#place_order,
+a.checkout-button.button.alt.wc-forward,
+.btn-red {
+    background: #f90000;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    padding: 0.5em 1em;
+    font-size: 16px;
+    font-weight: normal;
+    max-width: 100%;
+}
+
+button#place_order:hover,
+a.checkout-button.button.alt.wc-forward:hover,
+.btn-red:hover,
+button#place_order:focus,
+a.checkout-button.button.alt.wc-forward:focus,
+.btn-red:focus {
+    background: #de0000;
+    color: #fff;
+}
+
+a.checkout-button.button.alt.wc-forward {
+    padding: 1em;
+    font-size: 24px;
+}
+
+button#place_order {
+    font-size: 18px;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.nav-tabs>li {
+    float: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-tabs>li {
+        float: left;
+    }
+}
+
+.backdrop-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1050;
+}
+
+
+.breadcrumbs {
+    display: none;
+    background: url('images/background-products.jpg');
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin: 2em 0;
+}
+
+.breadcrumbs .breadcrumb {
+    display: inline-block;
+    background: none;
+    font-size: 24px;
+    padding: 8px;
+    margin: 12vh 0 0 0;
+    color: #fff;
+}
+
+.breadcrumbs .breadcrumb:first-child {
+    margin-left: 2em;
+}
+
+.breadcrumbs .breadcrumb h2 {
+    font-size: 0em;
+    margin: 0;
+}
+
+.breadcrumbs .breadcrumb h2 a {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+}
+
+@media screen and (min-width: 768px) {
+    .breadcrumbs {
+        display: block;
+    }
+}
+
+input, select {
+    padding: 0.5em;
+}
+
+.select2-container .select2-selection--single {
+    padding: 0.5em;
+    height: auto;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 25%;
+}
+
+.main-content {
+    margin-top: 2em;
+}
+
+a.woocommerce-Button.button,
+button.woocommerce-Button.button,
+.woocommerce button.button,
+a.button.wc-backward,
+.woocommerce a.button,
+.woocommerce button.button:disabled[disabled],
+a.woocommerce-button.button.view,
+.btn-blue {
+    background: #38c;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    padding: 0.5em 1em;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 1em 0;
+}
+
+a.woocommerce-Button.button:hover,
+button.woocommerce-Button.button:hover,
+.woocommerce button.button:hover,
+a.button.wc-backward:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:disabled[disabled]:hover,
+a.woocommerce-button.button.view:hover,
+.btn-blue:hover,
+a.woocommerce-Button.button:focus,
+button.woocommerce-Button.button:focus,
+.woocommerce button.button:focus,
+a.button.wc-backward:focus,
+.woocommerce a.button:focus,
+.woocommerce button.button:disabled[disabled]:focus,
+a.woocommerce-button.button.view:focus,
+.btn-blue:focus {
+    background: #002733;
+    color: #fff;
+}
+
+.checkbox input[type=checkbox] {
+    position: relative;
+    margin-left: 0;
+}
+
+.loader::before {
+    height: 1em;
+    width: 1em;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    content: '';
+    -webkit-animation: spin 1s ease-in-out infinite;
+    animation: spin 1s ease-in-out infinite;
+    background: url(../../plugins/woocommerce/assets/images/icons/loader.svg) center center;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(0,0,0,.75);
+}
+
+#notifications {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    right: 1em;
+    width: calc(100% - 2em);
+    z-index: 9999;
+}
+
+@media screen and (min-width: 768px) {
+    #notifications {
+        position: fixed;
+        top: unset;
+        left: unset;
+        bottom: 0;
+        right: 1em;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #notifications {
+        position: fixed;
+        top: unset;
+        left: unset;
+        bottom: 0;
+        right: 1em;
+        width: 33%;
+    }
+}
+
+#notifications .woocommerce-error, .woocommerce-info, .woocommerce-message {
+    background-color: #2b2b2b;
+    color: #fff;
+    cursor: pointer;
+}

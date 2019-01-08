@@ -1,0 +1,208 @@
+2019-01-02T18:00:35+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 934ff8baf940e59a25bc2f3f0caf49c6
+            [Date] => 2 ian. 2019 @ 18:00
+            [URL] => https://www.shopmaster.com/orders/woocommerceWebhook.json
+            [Duration] => 2.55837
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.5.3 Hookshot (WordPress/5.0.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ebicla.ro/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => qFFjmlWNcE31Qhjxic74CUlBOHs9XfljgoUGHvAz+iU=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 934ff8baf940e59a25bc2f3f0caf49c6
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [server] => nginx
+                                    [date] => Wed, 02 Jan 2019 18:00:36 GMT
+                                    [content-type] => application/json;charset=UTF-8
+                                    [vary] => Accept-Encoding
+                                    [set-cookie] => SHAREJSESSIONID=90056539-7fc2-4707-ada1-7e545f712968; Path=/; HttpOnly
+                                    [content-encoding] => gzip
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2019-01-02T18:00:36+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 04dcc56e2f663b33dbe99d785557eee0
+            [Date] => 2 ian. 2019 @ 18:00
+            [URL] => https://www.shopmaster.com/orders/woocommerceWebhook.json
+            [Duration] => 0.9994
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.5.3 Hookshot (WordPress/5.0.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ebicla.ro/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => qFFjmlWNcE31Qhjxic74CUlBOHs9XfljgoUGHvAz+iU=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 04dcc56e2f663b33dbe99d785557eee0
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [server] => nginx
+                                    [date] => Wed, 02 Jan 2019 18:00:37 GMT
+                                    [content-type] => application/json;charset=UTF-8
+                                    [vary] => Accept-Encoding
+                                    [set-cookie] => SHAREJSESSIONID=7c91eb93-ba08-4ba4-bc7c-e221849a8235; Path=/; HttpOnly
+                                    [content-encoding] => gzip
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2019-01-02T18:00:37+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 1ecd199bdc819ecdf5b8047ad0181d72
+            [Date] => 2 ian. 2019 @ 18:00
+            [URL] => https://www.shopmaster.com/orders/woocommerceWebhook.json
+            [Duration] => 1.05815
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.5.3 Hookshot (WordPress/5.0.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ebicla.ro/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => qFFjmlWNcE31Qhjxic74CUlBOHs9XfljgoUGHvAz+iU=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 1ecd199bdc819ecdf5b8047ad0181d72
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [server] => nginx
+                                    [date] => Wed, 02 Jan 2019 18:00:38 GMT
+                                    [content-type] => application/json;charset=UTF-8
+                                    [vary] => Accept-Encoding
+                                    [set-cookie] => SHAREJSESSIONID=07642799-5169-4f18-8686-1989f9d4e5a1; Path=/; HttpOnly
+                                    [content-encoding] => gzip
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2019-01-02T18:01:27+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 09639d277cf9fb3da76b6c68d51ec6d3
+            [Date] => 2 ian. 2019 @ 18:01
+            [URL] => https://www.shopmaster.com/orders/woocommerceWebhook.json
+            [Duration] => 1.14885
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.5.3 Hookshot (WordPress/5.0.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://ebicla.ro/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => /Dbmo8+wudysCvauBDXWcKCEMsMQRvZFTrIilyP7iz4=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 09639d277cf9fb3da76b6c68d51ec6d3
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [server] => nginx
+                                    [date] => Wed, 02 Jan 2019 18:01:28 GMT
+                                    [content-type] => application/json;charset=UTF-8
+                                    [vary] => Accept-Encoding
+                                    [set-cookie] => SHAREJSESSIONID=922a9a8e-4a24-4eb9-ba23-b2cda86e6792; Path=/; HttpOnly
+                                    [content-encoding] => gzip
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+

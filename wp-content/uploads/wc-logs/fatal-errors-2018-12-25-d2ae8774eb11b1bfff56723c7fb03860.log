@@ -1,0 +1,2 @@
+2018-12-25T18:19:36+00:00 CRITICAL Object of class WP_Post could not be converted to string în /home/ebiclaro/public_html/wp-content/plugins/timber-library/vendor/twig/twig/lib/Twig/Environment.php(462) : eval()'d code pe linia 343
+

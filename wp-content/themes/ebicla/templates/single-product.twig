@@ -1,0 +1,264 @@
+<main class="single-product">
+    
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="breadcrumbs">
+
+                <div class="breadcrumb"><h2><a href="{{ function('get_home_url') }}" title="Homepage">Homepage</a></h2></div>
+                <div class="breadcrumb backslash">/</div>
+                <div class="breadcrumb"><h2><a href="{{ function('get_permalink', function('woocommerce_get_page_id', 'shop')) }}" title="Toate produsele">Toate produsele</a></h2></div>
+
+                {% if category_name %}
+                    <div class="breadcrumb backslash">/</div>
+                    <div class="breadcrumb"><h2><a href="{{ function('site_url') }}/categorie-produs/{{ function('get_query_var', 'product_cat') }}/" title="{{ category_name }}">{{ category_name }}</a></h2></div>
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container main-content">
+
+        <div class="row">
+
+            <div class="product-details col-md-4 hidden-md hidden-lg top-title">
+
+                <h1>{{ product_title }}</h1>
+
+            </div>
+
+            <div class="images-gallery col-md-4">
+
+                <div class="main-image">
+
+                    <span class="vertical-align-helper"></span>
+
+                    <img src="{{ function('get_the_post_thumbnail_url') }}" alt="{{ function('get_the_post_thumbnail_alt', function('get_the_ID')) }}">
+
+                </div>
+            
+                <div class="gallery-image selected">
+
+                    <span class="vertical-align-helper"></span>
+
+                    <img src="{{ function('get_the_post_thumbnail_url') }}" alt="{{ function('get_the_post_thumbnail_alt', function('get_the_ID')) }}">
+
+                </div>
+
+                {% for item in attachment_ids %}
+                <div class="gallery-image">
+
+                    <span class="vertical-align-helper"></span>
+
+                    <img src="{{ item.src }}" alt="{{ item.alt }}">
+
+                </div>
+                {% endfor %}
+
+            </div>
+
+            <div class="product-details col-md-8">
+
+                {% if product_variable %}
+
+                <script>available_variations = {{ function('json_encode', available_variations) }};</script>
+
+                {% endif %}
+
+                <h1 class="visible-md visible-lg">{{ product_title }}</h1>
+
+                <div class="price">{{ price }}</div>
+
+                <div class="product-description">
+
+                    {{ function('the_excerpt', 2) }}
+
+                </div>
+
+                <div class="stock-info">
+
+                    {% if stock_quantity > 0 %}
+
+                    <span id="stock_quantity" class="no-stock {{ no_stock_class }}">{{ stock_quantity }}</span><span class="info">produse in stock</span>
+
+                    {% else %}
+
+                    <h3>Produsul nu mai exista in stock</h3>
+
+                    {% endif %}
+
+                </div>
+
+                {% if stock_quantity_total > 0 %}
+
+                <div class="buy">
+
+                    <div class="variations">
+
+                    {% for item in attribute_variations %}
+
+                        <div class="variation">
+
+                        <span class="attribute-label">{{ item.attribute_label }}</span>
+
+                        <select class="variation-attribute" name="{{ item.select_name }}">
+
+                            {% for value in item.variation %}
+
+                                <option value="{{ value.value }}" {{ value.selected }}>
+                                
+                                    {{ value.value }}
+                                    
+                                </option>
+
+                            {% endfor %}
+
+                        </select>
+
+                        </div>
+
+                    {% endfor %}
+
+                    </div>
+
+                    <div class="buy-item">
+                        
+                        <label for="quantity">Cantitate</label>
+
+                        <input type="number" value="1" class="quantity" name="quantity" id="quantity" min="1" max="{{ stock_quantity }}">
+
+                    </div>
+
+                    <div class="buy-item">
+
+                        <input type="hidden" class="product-id" value="{{ function('get_the_ID') }}">
+
+                        <button class="add-to-cart btn btn-danger btn-red"><i class="fas fa-shopping-cart"></i> Adauga in cos</button>
+
+                    </div>
+
+                    {% if show_shipping_class %}
+
+                    <div class="buy-item shipment">
+                            
+                        <strong><i class="fas fa-info-circle"></i> {{ shipping_class.name }}</strong>
+                            
+                        <span class="description">{{ shipping_class.description }}</span>
+                            
+                    </div>
+
+                    {% endif %}
+
+                </div>
+
+                {% endif %}
+
+                <div class="social-shares">
+
+                    <a href="{{ function('get_permalink') }}" data-image="{{ function('get_the_post_thumbnail_url') }}" data-title="{{ product_title }}" data-desc="{{ function('wp_strip_all_tags', info) }}" class="facebook-share not-spa"><i class="fab fa-facebook"></i>Distribuie</a>
+
+                    <a href="https://twitter.com/intent/tweet?text={{ product_title }} {{ function('get_permalink') }}" class="twitter-share"><i class="fab fa-twitter-square"></i>Tweet</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="product-more-info col-xs-12">
+
+                <ul class="nav nav-tabs">
+
+                    <li class="active"><a data-toggle="tab" href="#more-info">Alte informații</a></li>
+                    <li><a data-toggle="tab" href="#specificatii">Specificații</a></li>
+                    <li><a data-toggle="tab" href="#reviews">Recenzii</a></li>
+
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="more-info" class="tab-pane fade in active">
+                
+                        <div class="content">
+                            
+                            {{ info }}
+                        
+                        </div>
+                
+                    </div>
+
+                    <div id="specificatii" class="tab-pane fade">
+
+                        {{ attributes }}
+                    
+                    </div>
+
+                    <div id="reviews" class="tab-pane fade">
+                                            
+                        {{ reviews }}
+                    
+                    </div>
+
+                    <div id="related-products">
+
+                        <span class="title">Produse similare</span>
+
+                        {% if function('count', similar_products) > 0 %}
+
+                        <div class="row">
+
+                        {% for item in similar_products %}
+
+                            <div class="col-sm-6 col-md-3">
+
+                                <div class="similar-product">
+
+                                    <a class="nostyle" href="{{ item.url }}" title="{{ item.title }}">
+
+                                        <span class="product-info">
+
+                                            <h4>{{ item.title }}</h4>
+
+                                            <div class="image-div" style="background-image:url('{{ item.thumbnail }}');"></div>
+
+                                            <div class="center-alignment {{ item.price_class }}"><span class="price">{{ item.price }}</span></div>
+
+                                        </span>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        {% endfor %}
+
+                        </div>
+
+                        {% else %}
+                                
+                            <div class="no-results">
+
+                                <h4>Nu au fost gasite rezultate :( </h4>
+                                
+                            </div>
+
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>

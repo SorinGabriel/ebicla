@@ -1,0 +1,29 @@
+/* Cart style */
+
+.cart {
+    margin-top: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .cart {
+        margin-top: 18vh;
+    }
+}
+
+.cart .woocommerce-message {
+    display: none;
+}
+
+.cart .woocommerce table.shop_table {
+    border-radius: 0;
+}
+
+.cart .woocommerce table.shop_table thead {
+    background: #002733;
+    color: white;
+    font-weight: normal;
+} 
+
+.cart .woocommerce table.shop_table th {
+    font-weight: normal;
+}

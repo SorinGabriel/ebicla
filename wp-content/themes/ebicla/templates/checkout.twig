@@ -1,0 +1,28 @@
+
+    <main class="checkout-page">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="breadcrumbs">
+
+                    <div class="breadcrumb"><h2><a href="{{ function('get_home_url') }}" title="Homepage">Homepage</a></h2></div>
+
+                    <div class="breadcrumb backslash">/</div>
+                    
+                    <div class="breadcrumb"><h2><a href="{{ function('get_permalink') }}" title="Finalizare comanda">Finalizare comanda</a></h2></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container main-content">
+
+            {{ function('do_shortcode', '[woocommerce_checkout]') }}
+
+        </div>
+
+    </main>

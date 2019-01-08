@@ -1,0 +1,29 @@
+/* Q&A style */
+
+.qa {
+    margin-top: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .qa {
+        margin-top: 18vh;
+    }
+}
+
+.qa .question h2 {
+    font-size: 24px;
+    color: #ff5d00;
+}
+
+.qa .answer {
+    padding: 1em;
+    padding-left: 2em;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.qa .answer h2 {
+    font-size: 20px;
+    margin: 0;
+    list-style-type: disc;
+    display: list-item;
+}

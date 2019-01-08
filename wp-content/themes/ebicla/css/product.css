@@ -1,0 +1,80 @@
+
+.product-list .product {
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    margin-top: 2em;
+    padding: 1em;
+    min-height: 300px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.product-list .product:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.product-list .product .image-div {
+    min-height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+.product-list .product .product-info {
+    cursor: pointer;
+}
+
+.product-list .product div.variable {
+    margin: 2em 0 1em;
+}
+
+.product-list .product div.variable span.woocommerce-Price-amount.amount {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff5d00;
+}
+
+.product-list .product span.price {
+    text-align: center;
+    font-size: 1.25em;
+    vertical-align: middle;
+}
+
+.product-list div.product span.price del,
+.product-list div.product span.price ins {
+    display: block;
+    cursor: pointer;
+}
+
+.product-list div.product span.price del {
+    color: #000;
+}
+
+.product-list div.product span.price ins {
+    color: #ff5d00;
+    text-decoration: none;
+}
+
+.product-list div.product span.price del span.woocommerce-Price-amount.amount,
+.product-list div.product span.price del span.woocommerce-Price-currencySymbol {
+    font-size: 18px;
+}
+
+.product-list div.product span.price ins span.woocommerce-Price-amount.amount {
+    font-size: 30px;
+}
+
+.product-list .product .buy {
+    text-align: center;
+}
+
+.product-list .product .product-info h4 {
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

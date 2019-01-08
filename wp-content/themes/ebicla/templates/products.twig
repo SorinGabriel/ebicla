@@ -1,0 +1,220 @@
+
+    <main class="product-list">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="breadcrumbs">
+
+                    <div class="breadcrumb"><h2><a href="{{ function('get_home_url') }}" title="Homepage">Homepage</a></h2></div>
+                    <div class="breadcrumb backslash">/</div>
+                    <div class="breadcrumb"><h2><a href="{{ function('get_permalink', function('woocommerce_get_page_id', 'shop')) }}" title="Toate produsele">Toate produsele</a></h2></div>
+
+                    {% if category %}
+                        <div class="breadcrumb backslash">/</div>
+                        <div class="breadcrumb"><h2><a href="{{ function('site_url') }}/categorie-produs/{{ function('get_query_var', 'product_cat') }}/" title="{{ category }}">{{ category }}</a></h2></div>
+                    {% endif %}
+
+                    {% if search_term %}
+                        <div class="breadcrumb backslash">/</div>
+                        <div class="breadcrumb"><h2><a href="{{ function('site_url') }}/cautare/{{ search_term }}/" title="Rezultate pentru {{ search_term }}">Rezultate pentru {{ search_term }}</a></h2></div>
+                    {% endif %}
+
+                    {% for item in filters %}
+                        {% if item.queried_var %}
+                            <div class="breadcrumb backslash">/</div>
+                            <div class="breadcrumb"><h2><a href="{{ function('get_permalink', function('woocommerce_get_page_id', 'shop')) }}{{ function('strtolower', item.attribute_label) }}/{{ function('substr', item.queried_var, 1, -1) }}/" title="{{ item.attribute_label }} {{ item.queried_var }}">{{ item.attribute_label }} {{ item.queried_var }}</a></h2></div>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if min_price > 0 %}
+                        <div class="breadcrumb backslash">/</div>
+                        <div class="breadcrumb"><h2><a href="{{ function('site_url') }}/pret-minim/{{ min_price }}/" title="Pret minim {{ min_price }} RON">Pret minim {{ min_price }} RON</a></h2></div>
+                    {% endif %}
+
+                    {% if (max_price) and (max_price < 9999999999) %}
+                        <div class="breadcrumb backslash">/</div>
+                        <div class="breadcrumb"><h2><a href="{{ function('site_url') }}/pret-maxim/{{ max_price }}/" title="Pret maxim {{ max_price }} RON">Pret maxim {{ max_price }} RON</a></h2></div>
+                    {% endif %}
+
+                </div>
+
+            </div>
+
+            <div class="row sticky-row">
+
+                <section class="col-md-3">
+
+                    <div id="filters" class="filters">
+
+                        <h3>Filtre <i class="fas fa-caret-down"></i></h3>
+
+                        <div class="row">
+
+                            <h4>Pret</h4>
+
+                            <div class="validation-message validation-price">Pretul minim trebuie sa fie mai mic sau egal decat pretul maxim</div>
+
+                            <span class="price-cell">
+
+                                <label for="lowest-price">Pret minim:</label>
+
+                                <input type="number" id="lowest-price" name="pret-minim" class="price price-input" {{ lowest_price_value }}>
+
+                                <input type="hidden" class="url-value" value="{{ function('filter_links', 'pret-minim', '#pret_min#', 'singular') }}">
+
+                            </span>
+
+                            <span class="line">-</span>
+
+                            <span class="price-cell">
+
+                                <label for="highest-price">Pret maxim:</label>
+                            
+                                <input type="number" id="highest-price" name="pret-maxim" class="price price-input" {{ highest_price_value }}>
+
+                                <input type="hidden" class="url-value" value="{{ function('filter_links', 'pret-maxim', '#pret_max#', 'singular') }}">
+
+                            </span>
+
+                            <span>
+
+                                <button id="price-filter"><i class="fas fa-play"></i></button>
+
+                                <input type="hidden" class="url-value" value="{{ url_value }}">
+                        
+                            </span>
+
+                        </div>
+
+                        {% for item in attributes %}
+
+                            {% if function('count', item.values) > 0 %}
+
+                            <div class="row">
+
+                                <h4>{{ item.attribute_label }}</h4>
+
+                                {% for value in item.values %}
+
+                                <div class="value">
+
+                                    <input class="input-go" id="{{ value.id }}" type="checkbox" name="{{ value.attribute_name }}" value="{{ value.value }}" {{ value.checked }}>
+
+                                    <a href="{{ function('filter_links', value.attribute_name, value.val_slug, 'multiple') }}" title="">
+
+                                        <span class="value" for="{{ value.id }}">{{ value.val_name }}</span>
+                                    
+                                    </a>
+
+                                </div>
+
+                                {% endfor %}
+
+                            </div>
+
+                            {% endif %}
+
+                        {% endfor %}
+
+                    </div>
+
+                </section>
+
+                <section class="col-md-9 products">
+
+                    <div class="sort">
+                        <div class="sort-wrap">
+                            <span>Ordoneaza:</span>
+                            <select id="sort-select" name="sort">
+                                <option value="{{ function('filter_links', 'ordonare', '', 'singular') }}" {{ sort.popular }}>Cele mai populare</option>
+                                <option value="{{ function('filter_links', 'ordonare', 'noi', 'singular') }}" {{ sort.newest }}>Cele mai noi</option>
+                                <option value="{{ function('filter_links', 'ordonare', 'pret', 'singular') }}" {{ sort.ascending_price }}>Pret crescator</option>
+                                <option value="{{ function('filter_links', 'ordonare', 'pret-descrescator', 'singular') }}" {{ sort.descending_price }}>Pret descrescator</option>
+                                <option value="{{ function('filter_links', 'ordonare', 'recenzii', 'singular') }}" {{ sort.reviews }}>Recenzii</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    {{ function('woocommerce_product_loop_start') }}
+
+                    {% if function('wc_get_loop_prop', 'total') %}
+
+                        {% set index = 0 %}
+
+                        {% for item in products %}
+
+                            {# {% if index % 4 == 0 %}
+
+                                <div class="row">
+
+                            {% endif %} #}
+
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+
+                                <div class="product">
+
+                                    <a class="nostyle" href="{{ item.permalink }}" title="{{ item.title }}">
+
+                                        <span class="product-info">
+                 
+                                            <h4>{{ item.title }}</h4>
+
+                                            <div class="image-div" style="background-image:url('{{ item.thumbnail }}');"></div>
+
+                                            <div class="center-alignment {{ item.price_class }}"><span class="price">{{ item.price }}</span></div>
+
+                                            <div class="buy">
+
+                                                <input type="hidden" value="1" class="quantity" name="quantity">
+
+                                                <div class="buy-item">
+
+                                                    <input type="hidden" class="product-id" value="{{ item.id }}">
+
+                                                    <button class="add-to-cart btn btn-red {{ item.button_class }}"><i class="fas fa-shopping-cart"></i> Adauga in cos</button>
+
+                                                </div>
+
+                                            </div>
+
+                                        </span>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            {# {% if index % 4 == 3 %}
+
+                                </div>
+
+                            {% endif %} #}
+
+                            {% set index = index + 1 %}
+
+                        {% endfor %}
+
+                    {% else %}
+
+                        <div class="no-results">
+                            
+                            <h3>Nu au fost gasite rezultate :( </h3>
+                            
+                        </div>
+
+                    {% endif %}
+
+                    {{ function('woocommerce_product_loop_end') }}
+
+                    {{ function('do_action', 'woocommerce_after_shop_loop') }}
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>

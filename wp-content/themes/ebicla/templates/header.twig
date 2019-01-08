@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- {{ function('get_the_ID') }} -->
+<html>
+
+    <head>
+
+        <title>{{ function('wp_title') }}</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" href="{{ function('bloginfo', 'template_url')}}/images/favicon.png">
+
+        {{ function('wp_head') }}
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70420074-4"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-70420074-4');
+		</script>
+
+    </head>
+
+    <body class="{{ body_class }}">
+
+        <div style="display:none" class="backdrop-loader">
+
+            {{ function('get_sidebar', 'loader') }}
+
+        </div>
+
+        <header>
+
+            {{ function('get_sidebar', 'top') }}
+
+        </header>

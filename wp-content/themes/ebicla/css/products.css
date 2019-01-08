@@ -1,0 +1,223 @@
+/* List products style */
+
+.product-list {
+    margin-top: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .product-list {
+        margin-top: 18vh;
+    }
+}
+
+.product-list .product {
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    margin-top: 2em;
+    padding: 1em 0.5em;
+    min-height: 300px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.product-list .products {
+    margin: 0;
+}
+
+.product-list .product:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.product-list .product .image-div {
+    min-height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+.product-list .product .product-info {
+    cursor: pointer;
+}
+
+.product-list .product div.variable {
+    margin: 2em 0 1em;
+}
+
+.product-list .product div.variable span.woocommerce-Price-amount.amount {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff5d00;
+}
+
+.product-list .product span.price {
+    text-align: center;
+    font-size: 1.25em;
+    vertical-align: middle;
+}
+
+.product-list div.product span.price del,
+.product-list div.product span.price ins {
+    display: block;
+    cursor: pointer;
+}
+
+.product-list div.product span.price del {
+    color: #000;
+}
+
+.product-list div.product span.price ins {
+    color: #ff5d00;
+    text-decoration: none;
+}
+
+.product-list div.product span.price del span.woocommerce-Price-amount.amount,
+.product-list div.product span.price del span.woocommerce-Price-currencySymbol {
+    font-size: 18px;
+}
+
+.product-list div.product span.price ins span.woocommerce-Price-amount.amount {
+    font-size: 30px;
+}
+
+.product-list .product .buy {
+    text-align: center;
+}
+
+.product-list .product .product-info h4 {
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+}
+
+.product-list .products a.page-numbers {
+    color: #38c;
+}
+
+.product-list .products .page-numbers.current {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+.product-list .filters {
+    margin-top: 2em;
+    padding: 1em;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    color: #38c;
+    position: sticky;
+    top: 20%;
+    margin: auto 15px;
+}
+
+@media screen and (min-width: 992px) {
+    .product-list .filters {
+        margin: 2em 0em 2em 2em;
+    }
+}
+
+.product-list .filters .row {
+    margin: 1em 0 0 0;
+}
+
+.product-list .filters .price {
+    width: 100px;
+    padding: 0.25em 0.25em 0.25em 1em;
+    color: #000;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.product-list .filters h3,
+.product-list .filters h4 {
+    color: #000;
+}
+
+.product-list .filters .value label {
+    font-weight: normal;
+}
+
+.product-list .filters #price-filter {
+    background: transparent;
+    border: none;
+}
+
+.product-list .filters .price-cell {
+    text-align: center;
+    display: inline-block;
+}
+
+.product-list .filters .price-cell label {
+    display: block;
+}
+
+.product-list .filters .validation-message {
+    color: red;
+    display: none;
+    margin: 1em 0;
+}
+
+.product-list .no-results {
+    margin: 1em;
+    padding: 3em 0; 
+}
+
+.woocommerce nav.woocommerce-pagination {
+    margin-top: 3em;
+}
+
+.product-list .sticky-row {
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+    .product-list .sticky-row {
+        display: flex;
+    }
+}
+
+.product-list .sort {
+    margin-top: 2em;
+}
+
+.product-list .sort .sort-wrap {
+    float: right;
+}
+
+.product-list .sort .sort-wrap span {
+    vertical-align: middle;
+    margin: 15px;
+}
+
+.product-list .sort .sort-wrap #sort-select {
+    padding: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 15px;
+}
+
+.product-list #filters .row {
+    display: none;
+}
+
+.product-list #filters h3 {
+    cursor: pointer;
+    margin: 0;
+}
+
+.product-list #filters h3 i {
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 992px) {
+    .product-list #filters h3 i {
+        display: none;
+    }    
+    .product-list #filters .row {
+        display: block;
+    }
+}
