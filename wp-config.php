@@ -21,14 +21,14 @@
 // ** Setările MySQL: aceste informații pot fi obținute de la serviciile de găzduire ** //
 /** Numele bazei de date pentru WordPress */
 define('WP_CACHE', true);
-define( 'WPCACHEHOME', '/home/ebiclaro/public_html/wp-content/plugins/wp-super-cache/' );
+define( 'WPCACHEHOME', '/mnt/e/Ubuntu/ebicla/wp-content/plugins/wp-super-cache/' );
 define('DB_NAME', 'ebiclaro_wordpress');
 
 /** Numele de utilizator MySQL */
-define('DB_USER', 'ebiclaro_admin');
+define('DB_USER', 'ebicla');
 
 /** Parola utilizatorului MySQL */
-define('DB_PASSWORD', 'M)PE4WUvXJU3');
+define('DB_PASSWORD', '1a2b3c');
 
 /** Adresa serverului MySQL */
 define('DB_HOST', 'localhost');

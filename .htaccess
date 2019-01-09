@@ -1,16 +1,7 @@
 
-# HTTPS 
-
-# RewriteEngine On 
-# RewriteCond %{SERVER_PORT} 80 
-# RewriteRule ^(.*)$ https://ebicla.ro/$1 [R,L]
-
-RewriteEngine On 
-RewriteCond %{HTTP_HOST} ^ebicla\.ro [NC]
-RewriteCond %{SERVER_PORT} 80 
-RewriteRule ^(.*)$ https://ebicla.ro/$1 [R,L]
-
-# End HTTPS
+# Redirect HTTPS to HTTP
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # BEGIN Price filters 
 RewriteRule cautare/(.*)/categorie-produs/(.*)/culoare/(.*)/marime/(.*)/pret-minim/(.*)/pret-maxim/(.*)/ordonare/popularitate/pagina/(.*) index.php?s=$1&product_cat=$2&pa_culoare=($3)&pa_marime=($4)&min_price=$5&max_price=$6&orderby=popularity&paged=$7 [L]
@@ -631,11 +622,11 @@ RewriteRule pret-maxim/(.*) index.php?post_type=product&max_price=$1 [L]
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
+RewriteBase /Ubuntu/ebicla/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+RewriteRule . /Ubuntu/ebicla/index.php [L]
 </IfModule>
 
 # END WordPress
