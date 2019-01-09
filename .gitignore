@@ -1,3 +1,6 @@
 wp-config.php
 .htaccess
 index.php
+wp-admin/
+wp-includes/
+wp-content/plugins/
