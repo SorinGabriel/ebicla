@@ -50,7 +50,7 @@
 
             <li {{ item.li_class }}>
 
-                    <a title="{{ item.title }}" href="{{ item.url }}">
+                    <a title="{{ item.title }}" href="{{ item.url }}" {% if item.title == 'Notificări' %}class="js-push-btn not-spa"{% endif %}>
                         
                         {% if item.icon == 'fas fa-shopping-cart' %}
 
@@ -82,7 +82,11 @@
 
                         {% endif %}
 
-                        <span class="menu-text">{{ item.title }}</span>
+                        {% if item.title != 'Notificări' %}
+
+                            <span class="menu-text">{{ item.title }}</span>
+
+                        {% endif %}
                         
                     </a>
 
