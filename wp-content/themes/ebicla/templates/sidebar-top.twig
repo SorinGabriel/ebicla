@@ -14,6 +14,12 @@
 
             </button>
 
+            <a title="Notificări" href="#" class="js-push-btn not-spa active visible-xs mobile-notifications">
+
+                <i class="far fa-bell"></i>
+
+            </a>
+
             <a class="navbar-brand" href="{{ function('site_url') }}">
             
                 <img src="{{ function('bloginfo', 'template_url') }}/images/logo.svg" alt="ebicla.ro">
@@ -50,7 +56,7 @@
 
             <li {{ item.li_class }}>
 
-                    <a title="{{ item.title }}" href="{{ item.url }}" {% if item.title == 'Notificări' %}class="js-push-btn not-spa"{% endif %}>
+                    <a title="{{ item.title }}" href="{{ item.url }}" {% if item.title == 'Notificări' %}class="js-push-btn not-spa hidden-xs"{% endif %}>
                         
                         {% if item.icon == 'fas fa-shopping-cart' %}
 

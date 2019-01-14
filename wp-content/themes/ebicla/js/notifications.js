@@ -23,7 +23,7 @@
 
 const applicationServerPublicKey = 'BHNxH4G6agx-XsPBP-90jxHj9cXbn6vUVqWiDhGPpiJXy8el69RfWOzp5fs_ZJiU6jl8QTxoNdASPOOYXhuKbUw';
 
-const pushButton = document.querySelector('.js-push-btn');
+const pushButton = document.querySelectorAll('.js-push-btn');
 
 let isSubscribed = false;
 let swRegistration = null;
@@ -52,18 +52,21 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
         console.error('Service Worker Error', error);
     });
 } else {
-    pushButton.style.display = 'none';
+    for (var i = 0; i < pushButton.length; i++) {
+        pushButton[i].style.display = 'none';
+    }
 }
 
 function initializeUI() {
-    pushButton.addEventListener('click', function() {
-        pushButton.disabled = true;
-        if (isSubscribed) {
-            unsubscribeUser();
-    } else {
-            subscribeUser();
-        }
-    });
+    for (var i = 0; i < pushButton.length; i++) {
+        pushButton[i].addEventListener('click', function() {
+            if (isSubscribed) {
+                unsubscribeUser();
+        } else {
+                subscribeUser();
+            }
+        });
+    }
   
     // Set the initial subscription value
     swRegistration.pushManager.getSubscription()
@@ -76,15 +79,21 @@ function initializeUI() {
 
 function updateBtn() {
     if (Notification.permission === 'denied') {
-        pushButton.classList.remove("active");
+        for (var i = 0; i < pushButton.length; i++) {
+            pushButton[i].classList.remove("active");
+        }
         updateSubscriptionOnServer(null);
         return;
     }
   
     if (isSubscribed) {
-        pushButton.classList.add("active");
+        for (var i = 0; i < pushButton.length; i++) {
+            pushButton[i].classList.add("active");
+        }
     } else {
-        pushButton.classList.remove("active");
+        for (var i = 0; i < pushButton.length; i++) {
+            pushButton[i].classList.remove("active");
+        }
     }
 }
 
@@ -120,20 +129,21 @@ navigator.serviceWorker.register('serviceworker.js')
                     params: JSON.stringify(subscription)
                 },
                 success: function(json){
-                    console.log(json);
+                    ;
                 }
             });
         }
     }
 
-    pushButton.addEventListener('click', function() {
-        pushButton.disabled = true;
-        if (isSubscribed) {
-          unsubscribeUser();
-        } else {
-          subscribeUser();
-        }
-    });
+    for (var i = 0; i < pushButton.length; i++) {
+        pushButton[i].addEventListener('click', function() {
+            if (isSubscribed) {
+                unsubscribeUser();
+            } else {
+                subscribeUser();
+            }
+        });
+    }
 
     function unsubscribeUser() {
         swRegistration.pushManager.getSubscription()
