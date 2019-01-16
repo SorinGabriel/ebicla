@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-21 19:50:36+0000\n"
+"PO-Revision-Date: 2019-01-12 15:50:26+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,6 +25,11 @@ msgstr "1"
 msgctxt "default GMT offset or timezone string"
 msgid "0"
 msgstr "Europa/București"
+
+#. translators: %s: https://wordpress.org/plugins/classic-editor
+#: wp-admin/edit-form-blocks.php:412
+msgid "The block editor requires JavaScript. Please enable JavaScript in your browser settings, or try the <a href=\"%s\">Classic Editor plugin</a>."
+msgstr "Editorul de blocuri necesită JavaScript. Te rog activează JavaScript în setările navigatorului tău sau încearcă <a href=\"%s\">modulul Editor clasic</a>."
 
 #: wp-admin/post.php:44
 msgid "A post type mismatch has been detected."
@@ -92,138 +97,138 @@ msgid "The Gutenberg plugin has been deactivated, as the features are now includ
 msgstr "Modulul Gutenberg a fost dezactivat pentru că funcționalitățile lui sunt incluse acum implicit în WordPress %1$s. Dacă vrei să continui să testezi modificările viitoare în experiența de editare WordPress, te rog %2$sreactivează modulul Gutenberg%3$s."
 
 #. Translators: Use this to specify the CSS font family for the default font
-#: wp-admin/edit-form-blocks.php:182
+#: wp-admin/edit-form-blocks.php:178
 msgctxt "CSS Font Family for Editor Font"
 msgid "Noto Serif"
 msgstr "Noto Serif"
 
-#: wp-admin/about.php:458
+#: wp-admin/about.php:476
 msgid "Note to users of assistive technology: if you experience usability issues with the block editor, we recommend you continue to use the Classic Editor."
 msgstr "Notă pentru utilizatorii tehnologiei de asistare: dacă ai probleme la utilizarea editorului de blocuri, îți recomandăm să folosești în continuare Editorul clasic."
 
-#: wp-admin/about.php:457
+#: wp-admin/about.php:475
 msgid "The Classic Editor plugin restores the previous WordPress editor and the Edit Post screen. It lets you keep using plugins that extend it, add old-style meta boxes, or otherwise depend on the previous editor. To install, visit your plugins page and click the &#8220;Install Now&#8221; button next to &#8220;Classic Editor&#8221;. After the plugin finishes installing, click &#8220;Activate&#8221;. That’s it!"
 msgstr "Modulul Editor clasic restaurează editorul WordPress anterior și ecranul Editează articolul. Îți permite să folosești în continuare modulele care îl extind, să adaugi casete meta în stilul vechi, astfel te bazezi pe editorul anterior. Pentru a-l instala, mergi la pagina module și dă clic pe butonul &#8222;Instalează acum&#8221;, de lângă &#8222;Editor clasic&#8221;. După ce modulul este instalat, dă clic pe &#8222;Activează&#8221;. Asta este!"
 
-#: wp-admin/about.php:456
+#: wp-admin/about.php:474
 msgid "Prefer to stick with the familiar Classic Editor? No problem! Support for the Classic Editor plugin will remain in WordPress through 2021."
 msgstr "Preferi să rămâi cu familiarul Editor clasic? Nicio problemă! Suportul pentru modulul Editor clasic va rămâne în WordPress până în 2021."
 
-#: wp-admin/about.php:441
+#: wp-admin/about.php:459
 msgid "Keep it Classic"
 msgstr "Păstrează-l clasic"
 
-#: wp-admin/about.php:432
+#: wp-admin/about.php:450
 msgid "Learn how to get started"
 msgstr "Află cum să începi"
 
-#: wp-admin/about.php:426
+#: wp-admin/about.php:444
 msgid "The new block paradigm opens up a path of exploration and imagination when it comes to solving user needs. With the unified block insertion flow, it&#8217;s easier for your clients and customers to find and use blocks for all types of content. Developers can focus on executing their vision and providing rich editing experiences, rather than fussing with difficult APIs."
 msgstr "Noua paradigmă a blocurilor deschide o cale de explorare și imaginația, când vine vorba de rezolvarea nevoilor utilizatorului. Cu fluxul unificat de inserare a blocurilor, este mai ușor pentru clienți să găsească și să folosească blocuri, pentru toate tipurile de conținut. Dezvoltatorii se pot concentra să-și pună în practică viziunile și să ofere experiențe de editare bogate, în loc să se agite cu API-uri dificile."
 
-#: wp-admin/about.php:418
+#: wp-admin/about.php:436
 msgid "Take advantage of a wide collection of APIs and interface components to easily create blocks with intuitive controls for your clients. Utilizing these components not only speeds up development work but also provide a more consistent, usable, and accessible interface to all users."
 msgstr "Profită de o colecție vastă de API-uri și componente de interfață pentru a crea cu ușurință blocuri pentru clienți, cu comenzi intuitive. Folosirea acestor componente nu accelerează numai munca de dezvoltare, ci oferă și o interfață mai consistentă, mai ușor de folosit și mai accesibilă pentru toți utilizatorii."
 
-#: wp-admin/about.php:417
+#: wp-admin/about.php:435
 msgid "Compose"
 msgstr "Compune"
 
-#: wp-admin/about.php:410
+#: wp-admin/about.php:428
 msgid "Blocks provide a comfortable way for users to change content directly, while also ensuring the content structure cannot be easily disturbed by accidental code edits. This allows the developer to control the output, building polished and semantic markup that is preserved through edits and not easily broken."
 msgstr "Blocurile oferă utilizatorilor o modalitate confortabilă de a edita direct conținutul, asigurând totodată și faptul că structura conținutului nu este deranjată ușor de modificări accidentale ale codului. Aceasta permite dezvoltatorilor controlul rezultatului, construind un markup semantic ce e păstrat la editări și nu poate fi stricat ușor."
 
-#: wp-admin/about.php:409
+#: wp-admin/about.php:427
 msgid "Protect"
 msgstr "Protecție"
 
-#: wp-admin/about.php:390
+#: wp-admin/about.php:408
 msgid "Give Twenty Nineteen a try"
 msgstr "Încearcă Twenty Nineteen"
 
-#: wp-admin/about.php:383
+#: wp-admin/about.php:401
 msgid "Twenty Nineteen is designed to work for a wide variety of use cases. Whether you’re running a photo blog, launching a new business, or supporting a non-profit, Twenty Nineteen is flexible enough to fit your needs."
 msgstr "Twenty Nineteen este proiectată să funcționeze pentru o mare varietate de utilizări. Indiferent dacă ai un blog de fotografii, lansezi o afacere nouă sau sprijini o organizație non-profit, Twenty Nineteen este destul de flexibilă pentru a-ți satisface nevoile."
 
-#: wp-admin/about.php:378
+#: wp-admin/about.php:396
 msgid "Featuring ample whitespace, and modern sans-serif headlines paired with classic serif body text, Twenty Nineteen is built to be beautiful on the go. It uses system fonts to increase loading speed. No more long waits on slow networks!"
 msgstr "Propunând spații albe ample, subtitluri moderne în font neserifat împerecheate cu blocuri de corp text în font serifat, tema Twenty Nineteen este făcută să arate bine pe mobile. Folosește fonturi sistem pentru a mări viteza de încărcare. Gata cu așteptările pe rețele slabe!"
 
-#: wp-admin/about.php:382
+#: wp-admin/about.php:400
 msgid "Versatile design for all sites"
 msgstr "Design versatil pentru toate siturile"
 
-#: wp-admin/about.php:377
+#: wp-admin/about.php:395
 msgid "Simple, type-driven layout"
 msgstr "Aranjament simplu, bazat pe tipuri de conținut"
 
-#: wp-admin/about.php:370
+#: wp-admin/about.php:388
 msgid "Twenty Nineteen features custom styles for the blocks available by default in 5.0. It makes extensive use of editor styles throughout the theme. That way, what you create in your content editor is what you see on the front of your site."
 msgstr "Twenty Nineteen oferă stiluri personalizate pentru blocurile disponibile implicit în 5.0. Ea folosește peste tot stilurile editorului de blocuri. În acest fel, ceea ce creezi în editorul de conținut este și ceea ce vezi în partea din față a sitului."
 
-#: wp-admin/about.php:359
+#: wp-admin/about.php:377
 msgid "Introducing Twenty Nineteen, a new default theme that shows off the power of the new editor."
 msgstr "Vă prezentăm Twenty Nineteen, o nouă temă implicită ce demonstrează puterea noului editor."
 
-#: wp-admin/about.php:369
+#: wp-admin/about.php:387
 msgid "Designed for the block editor"
 msgstr "Proiectată pentru editorul de blocuri"
 
-#: wp-admin/about.php:318
+#: wp-admin/about.php:336
 msgid "This new editing experience provides a more consistent treatment of design as well as content. If you&#8217;re building client sites, you can create reusable blocks. This lets your clients add new content anytime, while still maintaining a consistent look and feel."
 msgstr "Această nouă experiență de editare oferă un tratament mai consistent atât design-ului cât și conținutului. Dacă faci situri pentru clienți, poți crea blocuri reutilizabile. Acestea permit clienților să adauge conținut nou oricând, păstrând în continuare consistența vizuală și senzorială."
 
-#: wp-admin/about.php:330
+#: wp-admin/about.php:348
 msgid "Build your first post"
 msgstr "Construiește-ți primul articol"
 
-#: wp-admin/about.php:340
+#: wp-admin/about.php:358
 msgid "A Stunning New Default Theme"
 msgstr "O nouă și frapantă temă implicită"
 
-#: wp-admin/about.php:353
+#: wp-admin/about.php:371
 msgid "The front-end of Twenty Nineteen on the left, and how it looks in the editor on the right."
 msgstr "Prima pagină a sitului cu tema Twenty Nineteen în stânga și cum arată în editor în dreapta."
 
-#: wp-admin/about.php:164
+#: wp-admin/about.php:182
 msgid "We have tons of blocks available by default, and more get added by the community every day. Here are a few of the blocks to help you get started:"
 msgstr "Avem o mulțime de blocuri disponibile implicit și mai multe vor fi adăugate de comunitate în fiecare zi. Aici ai câteva blocuri să te ajute să pornești:"
 
-#: wp-admin/about.php:317
+#: wp-admin/about.php:335
 msgid "Freedom to Build, Freedom to Write"
 msgstr "Libertatea de a construi, libertatea de a scrie"
 
-#: wp-admin/about.php:162 wp-admin/about.php:322
-msgid "Your browser doesn&#8217;t support HTML5 video. Here is a %1$slink to the video%2$s instead."
-msgstr "Navigatorul tău nu are suport pentru video HTML5. În schimb ai aici o legătură %1$s către video-ul %2$s."
-
-#: wp-admin/about.php:158
+#: wp-admin/about.php:176
 msgid "The new block-based editor won&#8217;t change the way any of your content looks to your visitors. What it will do is let you insert any type of multimedia in a snap and rearrange to your heart&#8217;s content. Each piece of content will be in its own block; a distinct wrapper for easy maneuvering. If you&#8217;re more of an HTML and CSS sort of person, then the blocks won&#8217;t stand in your way. WordPress is here to simplify the process, not the outcome."
 msgstr ""
 "Noul editor bazat pe blocuri nu va schimba felul în care va apare conținutul tău în fața vizitatorilor. Ce face în schimb este să te lase să inserezi cu ușurință orice tip de media și să rearanjezi conținutul după pofta inimii. Fiecare bucată de conținut va fi în propriul său bloc; un cadru distinct pentru o manevrare ușoară. Dacă știi mai multe despre HTML și CSS, blocurile nu-ți vor sta în cale.\n"
 "WordPress e aci pentru a simplifica procesul nu rezultatul. "
 
-#: wp-admin/about.php:157
-msgid "Building with Blocks"
-msgstr "A construi cu blocuri"
+#: wp-admin/about.php:180 wp-admin/about.php:340
+msgid "Your browser doesn&#8217;t support HTML5 video. Here is a %1$slink to the video%2$s instead."
+msgstr "Navigatorul tău nu are suport pentru video HTML5. În schimb ai aici o legătură %1$s către video-ul %2$s."
 
-#: wp-admin/about.php:112
+#: wp-admin/about.php:130
 msgid "You&#8217;ve successfully upgraded to WordPress 5.0! We’ve made some big changes to the editor. Our new block-based editor is the first step toward an exciting new future with a streamlined editing experience across your site. You’ll have more flexibility with how content is displayed, whether you are building your first site, revamping your blog, or write code for a living."
 msgstr "Ai făcut cu succes actualizarea la WordPress 5.0! Am făcut câteva schimbări majore în privința editorului. Noul nostru editor bazat pe blocuri este primul pas către un viitor incitant ce-ți va oferi o experiență de editare a sitului tău mult mai cursivă. Vei avea mai multă flexibilitate asupra felului de afișare a conținutului, fie că îți construiești primul sit, îți reîmprospătezi blogul sau scrii cod ca să-ți câștigi pâinea."
 
-#: wp-admin/about.php:141
+#: wp-admin/about.php:175
+msgid "Building with Blocks"
+msgstr "A construi cu blocuri"
+
+#: wp-admin/about.php:159
 msgid "Work across all screen sizes and devices."
 msgstr "Funcționează pe toate dispozitivele, indiferent de dimensiunea ecranului."
 
-#: wp-admin/about.php:132
+#: wp-admin/about.php:150
 msgid "Create modern, multimedia-heavy layouts."
 msgstr "Creează aranjamente moderne, pline de multimedia."
 
-#: wp-admin/about.php:150
+#: wp-admin/about.php:168
 msgid "Trust that your editor looks like your website."
 msgstr "Fii sigur că editorul arată exact ca situl tău web."
 
-#: wp-admin/about.php:123
+#: wp-admin/about.php:141
 msgid "Do more with fewer plugins."
 msgstr "Face mai multe cu mai puține module."
 
@@ -240,7 +245,7 @@ msgstr "Îți mulțumim pentru actualizarea la ultima versiune! WordPress %s int
 msgid "Welcome to WordPress. This is your first post. Edit or delete it, then start writing!"
 msgstr "Bine ai venit la WordPress. Acesta e primul tău articol. Editează-l sau șterge-l ș-apoi începe să scrii!"
 
-#: wp-admin/about.php:97
+#: wp-admin/about.php:115
 msgid "Say Hello to the New Editor"
 msgstr "Salută noul Editor"
 
@@ -314,7 +319,7 @@ msgstr[2] "%s de blocuri actualizate."
 msgid "<strong>ERROR</strong>: \"Table Prefix\" must not be empty."
 msgstr "<strong>EROARE</strong>: „Prefixul tabelului” nu trebuie să fie gol."
 
-#: wp-admin/edit-form-blocks.php:161
+#: wp-admin/edit-form-blocks.php:157
 msgid "Default template"
 msgstr "Șablon implicit"
 
@@ -335,12 +340,16 @@ msgctxt "page title"
 msgid "About"
 msgstr "Despre"
 
+#: wp-admin/edit-form-blocks.php:413
+msgid "https://wordpress.org/plugins/classic-editor/"
+msgstr "https://wordpress.org/plugins/classic-editor/"
+
 #: wp-admin/includes/upgrade.php:303
 #: wp-admin/includes/class-wp-internal-pointers.php:167 wp-admin/privacy.php:63
 msgid "Privacy Policy"
 msgstr "Politică de confidențialitate"
 
-#: wp-admin/about.php:461
+#: wp-admin/about.php:479
 msgid "Install the Classic Editor"
 msgstr "Instalează Editorul clasic"
 
@@ -502,6 +511,11 @@ msgid "Create or select your site&#8217;s privacy policy page under <strong>Sett
 msgstr "Creează sau selectează pagina politică de confidențialitate pentru situl tău în <strong>Setări &gt; Confidențialitate</strong> pentru a-ți ține utilizatorii informați și la curent."
 
 #. translators: privacy policy tutorial.
+#: wp-admin/includes/misc.php:1901
+msgid "If your web site provides a service which includes automated decision making - for example, allowing customers to apply for credit, or aggregating their data into an advertising profile - you must note that this is taking place, and include information about how that information is used, what decisions are made with that aggregated data, and what rights users have over decisions made without human intervention."
+msgstr "Dacă situl tău web oferă un serviciu care include luarea automată a deciziilor - de exemplu, permite clienților să solicite un credit sau să-și stângă datele într-un profil publicitar - trebuie să menționezi că faci asta și să incluzi informații despre cum sunt folosite aceste date, ce decizii se iau referitor la aceste date adunate și ce drepturi au utilizatorii asupra deciziilor luate fără intervenția umană."
+
+#. translators: privacy policy tutorial.
 #: wp-admin/includes/misc.php:1909
 msgid "If you are a member of a regulated industry, or if you are subject to additional privacy laws, you may be required to disclose that information here."
 msgstr "Dacă ai o afacere controlată de guvern sau ești supus unor legi suplimentare privind confidențialitatea, ți se poate cere să divulgi aceste informații aici."
@@ -510,11 +524,6 @@ msgstr "Dacă ai o afacere controlată de guvern sau ești supus unor legi supli
 #: wp-admin/includes/misc.php:1905
 msgid "Industry regulatory disclosure requirements"
 msgstr "Cerințe pentru divulgarea unei afaceri controlată de guvern"
-
-#. translators: privacy policy tutorial.
-#: wp-admin/includes/misc.php:1901
-msgid "If your web site provides a service which includes automated decision making - for example, allowing customers to apply for credit, or aggregating their data into an advertising profile - you must note that this is taking place, and include information about how that information is used, what decisions are made with that aggregated data, and what rights users have over decisions made without human intervention."
-msgstr "Dacă situl tău web oferă un serviciu care include luarea automată a deciziilor - de exemplu, permite clienților să solicite un credit sau să-și stângă datele într-un profil publicitar - trebuie să menționezi că faci asta și să incluzi informații despre cum sunt folosite aceste date, ce decizii se iau referitor la aceste date adunate și ce drepturi au utilizatorii asupra deciziilor luate fără intervenția umană."
 
 #. translators: default privacy policy heading.
 #: wp-admin/includes/misc.php:1897
@@ -1317,7 +1326,7 @@ msgstr "https://codex.wordpress.org/Giving_WordPress_Its_Own_Directory"
 msgid "Enter the address here if you <a href=\"%s\">want your site home page to be different from your WordPress installation directory</a>."
 msgstr "Introdu aici adresa dacă <a href=\"%s\">vrei ca prima pagină a sitului tău să fie diferită de directorul de instalare WordPress</a>."
 
-#: wp-admin/about.php:399
+#: wp-admin/about.php:417
 msgid "Developer Happiness"
 msgstr "Bucuria dezvoltatorului"
 
@@ -2741,7 +2750,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Acum este setată: %s)"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:590
+#: wp-admin/about.php:608
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Versiunea %s</strong> a rezolvat o problemă de securitate."
 
@@ -2763,15 +2772,15 @@ msgstr "Îți poți schimba poza de profil în <a href=\"%s\">Gravatar</a>."
 msgid "Profile Picture"
 msgstr "Poză de profil"
 
-#: wp-admin/about.php:584
+#: wp-admin/about.php:602
 msgid "Security Releases"
 msgstr "Lansări de securitate"
 
-#: wp-admin/about.php:581
+#: wp-admin/about.php:599
 msgid "Maintenance Releases"
 msgstr "Lansări de mentenanță"
 
-#: wp-admin/about.php:64 wp-admin/about.php:587
+#: wp-admin/about.php:64 wp-admin/about.php:605
 msgid "Maintenance and Security Releases"
 msgstr "Lansări de mentenanță și securitate"
 
@@ -3935,14 +3944,6 @@ msgstr ""
 msgid "To add a custom link, <strong>expand the Custom Links section, enter a URL and link text, and click Add to Menu</strong>"
 msgstr "Pentru a adăuga o legătură personalizată, <strong>extinde secțiunea Legături personalizate, introdu un URL și un text pentru legătură și dă clic pe Adaugă în meniu</strong>"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:846
-msgid ""
-"UPDATE LOG\n"
-"=========="
-msgstr ""
-"JURNAL ACTUALIZARE \n"
-"==================="
-
 #. translators: Do not translate USERNAME, ADMIN_URL, EMAIL, SITENAME, SITEURL:
 #. those are placeholders.
 #: wp-admin/includes/misc.php:1191
@@ -3980,6 +3981,14 @@ msgstr ""
 "Toate cele bune,\n"
 "Toți cei de la ###SITENAME###\n"
 "###SITEURL###"
+
+#: wp-admin/includes/class-wp-automatic-updater.php:846
+msgid ""
+"UPDATE LOG\n"
+"=========="
+msgstr ""
+"JURNAL ACTUALIZARE \n"
+"==================="
 
 #: wp-admin/includes/class-wp-automatic-updater.php:828
 msgid ""
@@ -5292,15 +5301,15 @@ msgstr "Pentru a naviga între revizii <strong>trage glisorul în stânga sau dr
 msgid "Loading&hellip;"
 msgstr "Se încarcă&hellip;"
 
-#: wp-admin/post.php:220
+#: wp-admin/post.php:221
 msgid "The item you are trying to move to the Trash no longer exists."
 msgstr "Elementul pe care încerci să-l muți la gunoi nu mai există."
 
-#: wp-admin/post.php:243
+#: wp-admin/post.php:244
 msgid "The item you are trying to restore from the Trash no longer exists."
 msgstr "Elementul pe care încerci să-l restaurezi din gunoi nu mai există."
 
-#: wp-admin/post.php:261
+#: wp-admin/post.php:262
 msgid "This item has already been deleted."
 msgstr "Acest element a fost deja șters."
 
@@ -5541,7 +5550,7 @@ msgstr "Ciornă creată în %1$s la %2$s"
 msgid "%s has taken over and is currently editing."
 msgstr "%s a preluat controlul și editează în acest moment."
 
-#: wp-admin/post.php:230
+#: wp-admin/post.php:231
 msgid "You cannot move this item to the Trash. %s is currently editing."
 msgstr "Nu poți muta acest element la gunoi. %s este editat în acest moment."
 
@@ -6568,7 +6577,7 @@ msgid "Show Toolbar when viewing site"
 msgstr "Arată bara de unelte la vizualizarea sitului"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:69 wp-admin/about.php:595
+#: wp-admin/about.php:69 wp-admin/about.php:87 wp-admin/about.php:613
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Versiunea %1$s</strong> a rezolvat %2$s eroare."
@@ -6577,7 +6586,7 @@ msgstr[2] "<strong>Versiunea %1$s</strong> a rezolvat %2$s de erori."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:603
+#: wp-admin/about.php:621
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Versiunea %1$s</strong> a rezolvat câteva probleme de securitate și %2$s eroare."
@@ -6586,7 +6595,7 @@ msgstr[2] "<strong>Versiunea %1$s</strong> a rezolvat câteva probleme de securi
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:599
+#: wp-admin/about.php:617
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Versiunea %1$s</strong> a rezolvat o problemă de securitate și %2$s eroare."
@@ -6594,7 +6603,8 @@ msgstr[1] "<strong>Versiunea %1$s</strong> a rezolvat o problemă de securitate 
 msgstr[2] "<strong>Versiunea %1$s</strong> a rezolvat o problemă de securitate și %2$s de erori."
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:80 wp-admin/about.php:90 wp-admin/about.php:607
+#: wp-admin/about.php:80 wp-admin/about.php:98 wp-admin/about.php:108
+#: wp-admin/about.php:625
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Pentru mai multe informații, vezi <a href=\"%s\">notele de lansare</a>."
 
@@ -6607,19 +6617,19 @@ msgid "What&#8217;s New"
 msgstr "Noutăți"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:86 wp-admin/about.php:592
+#: wp-admin/about.php:104 wp-admin/about.php:610
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Versiunea %s</strong> a rezolvat câteva probleme de securitate."
 
-#: wp-admin/about.php:583
+#: wp-admin/about.php:601
 msgid "Security Release"
 msgstr "Actualizare de securitate"
 
-#: wp-admin/about.php:580
+#: wp-admin/about.php:598
 msgid "Maintenance Release"
 msgstr "Actualizare de mentenanță"
 
-#: wp-admin/about.php:586
+#: wp-admin/about.php:604
 msgid "Maintenance and Security Release"
 msgstr "Actualizare de mentenanță și securitate"
 
@@ -6631,7 +6641,7 @@ msgstr "Acest ecran îți oferă posibilitatea să alegi structura ta de legătu
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Bun venit pe WordPress %1$s. <a href=\"%2$s\">Află mai multe</a>."
 
-#: wp-admin/about.php:473
+#: wp-admin/about.php:491
 msgid "Return to Updates"
 msgstr "Înapoi la actualizări"
 
@@ -6903,11 +6913,11 @@ msgstr "Deoarece aceasta este o instalare multi-sit, poți adăuga conturi care 
 msgid "Welcome to WordPress %s"
 msgstr "Bun venit pe WordPress %s"
 
-#: wp-admin/about.php:476
+#: wp-admin/about.php:494
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Mergi la Panou control &rarr; Prima pagină"
 
-#: wp-admin/about.php:473
+#: wp-admin/about.php:491
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Înapoi la Panou control &rarr; Actualizări"
 
@@ -8469,12 +8479,12 @@ msgstr "Da, du-mă la pagina mea de profil"
 msgid "No thanks, do not remind me again"
 msgstr "Nu mulțumesc, nu-mi mai reaminti"
 
-#: wp-admin/post.php:272 wp-admin/post.php:275 wp-admin/upload.php:164
+#: wp-admin/post.php:273 wp-admin/post.php:276 wp-admin/upload.php:164
 #: wp-admin/edit.php:144 wp-admin/edit.php:147
 msgid "Error in deleting."
 msgstr "Eroare la ștergere."
 
-#: wp-admin/post.php:252 wp-admin/upload.php:152 wp-admin/edit.php:128
+#: wp-admin/post.php:253 wp-admin/upload.php:152 wp-admin/edit.php:128
 msgid "Error in restoring from Trash."
 msgstr "Eroare la restaurarea din gunoi."
 
@@ -8494,15 +8504,15 @@ msgstr[0] "%s comentariu a fost scos din gunoi"
 msgstr[1] "%s comentarii au fost scoase din gunoi"
 msgstr[2] "%s de comentarii au fost scoase din gunoi"
 
-#: wp-admin/post.php:234 wp-admin/upload.php:140 wp-admin/edit.php:114
+#: wp-admin/post.php:235 wp-admin/upload.php:140 wp-admin/edit.php:114
 msgid "Error in moving to Trash."
 msgstr "Eroare la mutarea în gunoi."
 
-#: wp-admin/post.php:226 wp-admin/upload.php:137 wp-admin/edit.php:106
+#: wp-admin/post.php:227 wp-admin/upload.php:137 wp-admin/edit.php:106
 msgid "Sorry, you are not allowed to move this item to the Trash."
 msgstr "Regret, nu ai voie să muți acest element la gunoi."
 
-#: wp-admin/post.php:249 wp-admin/upload.php:149 wp-admin/edit.php:125
+#: wp-admin/post.php:250 wp-admin/upload.php:149 wp-admin/edit.php:125
 msgid "Sorry, you are not allowed to restore this item from the Trash."
 msgstr "Regret, nu ai voie să restaurezi acest element din gunoi."
 
@@ -8691,7 +8701,7 @@ msgstr "Actualizări WordPress"
 msgid "Edit menu item"
 msgstr "Editează element meniu"
 
-#: wp-admin/about.php:476
+#: wp-admin/about.php:494
 msgid "Go to Dashboard"
 msgstr "Mergi la panoul de control"
 
@@ -9268,10 +9278,6 @@ msgstr "Informații biografice"
 msgid "Update Profile"
 msgstr "Actualizează profil"
 
-#: wp-admin/user-edit.php:711
-msgid "Update User"
-msgstr "Actualizează utilizator"
-
 #: wp-admin/users.php:232
 msgid "Delete Users"
 msgstr "Șterge utilizatori"
@@ -9310,7 +9316,7 @@ msgstr "Categorie implicită pentru articole"
 msgid "No users found."
 msgstr "Niciun utilizator găsit."
 
-#: wp-admin/about.php:310
+#: wp-admin/about.php:328
 msgid "More"
 msgstr "Mai mult"
 
@@ -10055,6 +10061,10 @@ msgstr "Bine ai venit la %s. Acesta este primul tău articol. Editează-l sau ș
 #: wp-admin/update-core.php:110
 msgid "This localized version contains both the translation and various other localization fixes. You can skip upgrading if you want to keep your current translation."
 msgstr "Această versiune localizată conține atât traduceri cât și diverse alte ajustări de localizare. Poți să sari peste actualizare dacă vrei să păstrezi traducerea actuală."
+
+#: wp-admin/user-edit.php:711
+msgid "Update User"
+msgstr "Actualizează utilizatorul"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:276
 #: wp-admin/theme-install.php:61
@@ -11440,7 +11450,7 @@ msgstr "Regret, nu ai voie să editezi articole în numele acestui utilizator."
 msgid "Sorry, you are not allowed to edit pages as this user."
 msgstr "Regret, nu ai voie să modifici pagini în numele acestui utilizator."
 
-#: wp-admin/edit-tags.php:100 wp-admin/post.php:267 wp-admin/themes.php:43
+#: wp-admin/edit-tags.php:100 wp-admin/post.php:268 wp-admin/themes.php:43
 #: wp-admin/upload.php:161 wp-admin/edit.php:140
 msgid "Sorry, you are not allowed to delete this item."
 msgstr "Regret, nu ai voie să ștergi acest element."

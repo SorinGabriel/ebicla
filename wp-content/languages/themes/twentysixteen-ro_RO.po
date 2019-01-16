@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Sixteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-01 11:22:16+0000\n"
+"PO-Revision-Date: 2018-12-29 17:27:24+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,18 +20,18 @@ msgid "Twenty Sixteen"
 msgstr "Twenty Sixteen"
 
 #. translators: %s: Name of current post
-#: image.php:84 template-parts/content.php:49
-#: template-parts/content-single.php:45 template-parts/content-search.php:28
-#: template-parts/content-search.php:43 template-parts/content-page.php:37
+#: template-parts/content.php:53 template-parts/content-page.php:39
+#: template-parts/content-search.php:28 template-parts/content-search.php:43
+#: template-parts/content-single.php:47 image.php:88
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Editează<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Editează<span class=\"screen-reader-text\"> „%s”</span>"
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:184 template-parts/content.php:28
+#: template-parts/content.php:29 inc/template-tags.php:194
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "Continuă lectura<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Continuă lectura<span class=\"screen-reader-text\"> „%s”</span>"
 
-#: inc/customizer.php:283
+#: inc/customizer.php:345
 msgid "Red"
 msgstr "Roșu"
 
@@ -60,11 +60,11 @@ msgstr "Caută după:"
 msgid "Footer Primary Menu"
 msgstr "Meniu principal subsol"
 
-#: footer.php:28
+#: footer.php:30
 msgid "Footer Social Links Menu"
 msgstr "Meniu legături sociale subsol"
 
-#: functions.php:231
+#: functions.php:246
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Adaugă piese aici ca să apară în bara ta laterală."
 
@@ -96,19 +96,19 @@ msgstr "Vezi toate articolele lui %s"
 msgid "Author:"
 msgstr "Autor:"
 
-#: single.php:38
+#: single.php:42
 msgid "Previous post:"
 msgstr "Articolul anterior:"
 
-#: single.php:37
+#: single.php:41
 msgid "Previous"
 msgstr "Precedent"
 
-#: single.php:35
+#: single.php:39
 msgid "Next post:"
 msgstr "Articolul următor:"
 
-#: single.php:34
+#: single.php:38
 msgid "Next"
 msgstr "Următor"
 
@@ -116,104 +116,104 @@ msgstr "Următor"
 msgid "Search Results for: %s"
 msgstr "Rezultatele căutării pentru: %s"
 
-#: inc/template-tags.php:106
+#: inc/template-tags.php:112
 msgctxt "Used before tag names."
 msgid "Tags"
 msgstr "Etichete"
 
-#: inc/template-tags.php:98
+#: inc/template-tags.php:103
 msgctxt "Used before category names."
 msgid "Categories"
 msgstr "Categorii"
 
-#: inc/template-tags.php:95 inc/template-tags.php:103
+#: inc/template-tags.php:99 inc/template-tags.php:108
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
-#: inc/template-tags.php:79
+#: inc/template-tags.php:83
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Publicat pe"
 
-#: inc/template-tags.php:38
+#: inc/template-tags.php:40
 msgctxt "Used before post format."
 msgid "Format"
 msgstr "Format"
 
-#: inc/template-tags.php:50
+#: inc/template-tags.php:52
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Lasă un comentariu<span class=\"screen-reader-text\"> la %s</span>"
 
-#: inc/template-tags.php:25
+#: inc/template-tags.php:26
 msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Autor"
 
-#: functions.php:194 inc/customizer.php:293
+#: functions.php:207 inc/customizer.php:355
 msgid "Yellow"
 msgstr "Galben"
 
-#: inc/customizer.php:273
+#: inc/customizer.php:335
 msgid "Gray"
 msgstr "Gri"
 
-#: inc/customizer.php:263
+#: inc/customizer.php:325
 msgid "Dark"
 msgstr "Întunecat"
 
-#: inc/customizer.php:253
+#: inc/customizer.php:315
 msgid "Default"
 msgstr "Implicit"
 
-#: inc/customizer.php:184
+#: inc/customizer.php:242
 msgid "Secondary Text Color"
 msgstr "Culoare secundară text"
 
-#: inc/customizer.php:172
+#: inc/customizer.php:221
 msgid "Main Text Color"
 msgstr "Culoare principală text"
 
-#: inc/customizer.php:160
+#: inc/customizer.php:200
 msgid "Link Color"
 msgstr "Culoare legătură"
 
-#: inc/customizer.php:145
+#: inc/customizer.php:176
 msgid "Page Background Color"
 msgstr "Culoare fundal pagină"
 
-#: single.php:29 image.php:102
+#: single.php:31 image.php:107
 msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">Publicat în</span><span class=\"post-title\">%title</span>"
 
-#: inc/customizer.php:130
+#: inc/customizer.php:153
 msgid "Base Color Scheme"
 msgstr "Schemă coloristică de bază"
 
-#: inc/back-compat.php:41 inc/back-compat.php:53 inc/back-compat.php:68
+#: inc/back-compat.php:41 inc/back-compat.php:54 inc/back-compat.php:72
 msgid "Twenty Sixteen requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Sixteen necesită măcar WordPress versiunea 4.3. Tu rulezi versiunea %s. Te rog actualizează și încearcă din nou."
 
-#: image.php:73
+#: image.php:77
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "Mărime întreagă"
 
-#: image.php:56 template-parts/content.php:33
-#: template-parts/content-single.php:25 template-parts/content-page.php:23
+#: template-parts/content.php:36 template-parts/content-page.php:24
+#: template-parts/content-single.php:26 image.php:58
 msgid "Pages:"
 msgstr "Pagini:"
 
-#: image.php:25
+#: image.php:26
 msgid "Next Image"
 msgstr "Imaginea următoare"
 
-#: image.php:24
+#: image.php:25
 msgid "Previous Image"
 msgstr "Imaginea precedentă"
 
-#: header.php:47
+#: header.php:49
 msgid "Menu"
 msgstr "Meniu"
 
@@ -221,18 +221,18 @@ msgstr "Meniu"
 msgid "Skip to content"
 msgstr "Sari la conținut"
 
-#: functions.php:360
+#: functions.php:386
 msgid "expand child menu"
 msgstr "extinde meniul copil"
 
-#: functions.php:361
+#: functions.php:387
 msgid "collapse child menu"
 msgstr "restrânge meniul copil"
 
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:276
+#: functions.php:296
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr "on"
@@ -240,7 +240,7 @@ msgstr "on"
 #. translators: If there are characters in your language that are not supported
 #. by Inconsolata, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:286
+#: functions.php:306
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "on"
@@ -248,40 +248,40 @@ msgstr "on"
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:281
+#: functions.php:301
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:249
+#: functions.php:268
 msgid "Content Bottom 2"
 msgstr "Conținut la bază 2"
 
-#: functions.php:241 functions.php:251
+#: functions.php:258 functions.php:270
 msgid "Appears at the bottom of the content on posts and pages."
 msgstr "Apare la baza conținutului articolelor și paginilor."
 
-#: functions.php:239
+#: functions.php:256
 msgid "Content Bottom 1"
 msgstr "Conținut la bază 1"
 
-#: functions.php:229
+#: functions.php:244
 msgid "Sidebar"
 msgstr "Bară laterală"
 
-#: header.php:62 functions.php:89
+#: functions.php:93 header.php:66
 msgid "Social Links Menu"
 msgstr "Meniu legături sociale"
 
-#: header.php:51 functions.php:88
+#: functions.php:92 header.php:53
 msgid "Primary Menu"
 msgstr "Meniu principal"
 
-#: footer.php:57
+#: footer.php:61
 msgid "Proudly powered by %s"
 msgstr "Propulsat cu mândrie de %s"
 
-#: comments.php:69
+#: comments.php:71
 msgid "Comments are closed."
 msgstr "Comentariile sunt închise."
 
@@ -294,17 +294,17 @@ msgstr[0] "Un comentariu la &bdquo;%2$s&rdquo;"
 msgstr[1] "%1$s comentarii la &bdquo;%2$s&rdquo;"
 msgstr[2] "%1$s de comentarii la &bdquo;%2$s&rdquo;"
 
-#: index.php:48 archive.php:51 search.php:39 image.php:60
-#: template-parts/content.php:37 template-parts/content-single.php:29
-#: template-parts/content-page.php:27
+#: archive.php:53 template-parts/content.php:40
+#: template-parts/content-page.php:28 template-parts/content-single.php:30
+#: search.php:41 index.php:50 image.php:62
 msgid "Page"
 msgstr "Pagină"
 
-#: index.php:47 archive.php:50 search.php:38
+#: archive.php:52 search.php:40 index.php:49
 msgid "Next page"
 msgstr "Pagina următoare"
 
-#: index.php:46 archive.php:49 search.php:37
+#: archive.php:51 search.php:39 index.php:48
 msgid "Previous page"
 msgstr "Pagina precedentă"
 
@@ -325,6 +325,6 @@ msgid "https://wordpress.org/themes/twentysixteen/"
 msgstr "https://wordpress.org/themes/twentysixteen/"
 
 #. Author URI of the theme
-#: footer.php:56
+#: footer.php:60
 msgid "https://wordpress.org/"
 msgstr "https://ro.wordpress.org/"

@@ -1,0 +1,28 @@
+2019-01-16T22:41:35+00:00 CRITICAL Cannot redeclare Get_Stock_info() (previously declared in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php:121) în /mnt/e/Ubuntu/ebicla/wp-content/plugins/ebicla-custom-plugin/functions.php pe linia 141
+
+2019-01-16T22:41:35+00:00 CRITICAL Cannot redeclare Get_Stock_info() (previously declared in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php:121) în /mnt/e/Ubuntu/ebicla/wp-content/plugins/ebicla-custom-plugin/functions.php pe linia 141
+
+2019-01-16T22:41:36+00:00 CRITICAL Cannot redeclare Get_Stock_info() (previously declared in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php:121) în /mnt/e/Ubuntu/ebicla/wp-content/plugins/ebicla-custom-plugin/functions.php pe linia 141
+
+2019-01-16T22:47:43+00:00 CRITICAL require_once(): Failed opening required '/mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-16T22:47:44+00:00 CRITICAL require_once(): Failed opening required 'functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-16T22:47:46+00:00 CRITICAL require_once(): Failed opening required 'functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-16T22:53:53+00:00 CRITICAL Cannot redeclare Get_Stock_info() (previously declared in /mnt/e/Ubuntu/ebicla/wp-content/plugins/ebicla-custom-plugin/functions.php:128) în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php pe linia 121
+
+2019-01-16T22:54:10+00:00 CRITICAL require_once(): Failed opening required '/mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-16T22:54:12+00:00 CRITICAL require_once(): Failed opening required 'functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-16T22:54:12+00:00 CRITICAL require_once(): Failed opening required 'functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-16T22:54:32+00:00 CRITICAL require_once(): Failed opening required 'functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-16T22:54:46+00:00 CRITICAL Cannot redeclare Get_Stock_info() (previously declared in /mnt/e/Ubuntu/ebicla/wp-content/plugins/ebicla-custom-plugin/functions.php:128) în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php pe linia 121
+
+2019-01-16T22:54:46+00:00 CRITICAL Cannot redeclare Get_Stock_info() (previously declared in /mnt/e/Ubuntu/ebicla/wp-content/plugins/ebicla-custom-plugin/functions.php:128) în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php pe linia 121
+
+2019-01-16T22:54:47+00:00 CRITICAL Cannot redeclare Get_Stock_info() (previously declared in /mnt/e/Ubuntu/ebicla/wp-content/plugins/ebicla-custom-plugin/functions.php:128) în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php pe linia 121
+
