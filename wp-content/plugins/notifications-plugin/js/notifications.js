@@ -44,7 +44,7 @@ function urlB64ToUint8Array(base64String) {
 }
 
 if ('serviceWorker' in navigator && 'PushManager' in window) {
-    navigator.serviceWorker.register('serviceworker.js')
+    navigator.serviceWorker.register('wp-content/plugins/notifications-plugin/serviceworker.js')
     .then(function(swReg) {
         swRegistration = swReg;
     })
@@ -97,7 +97,7 @@ function updateBtn() {
     }
 }
 
-navigator.serviceWorker.register('serviceworker.js')
+navigator.serviceWorker.register('wp-content/plugins/notifications-plugin/serviceworker.js')
     .then(function(swReg) {
         swRegistration = swReg;
         initializeUI();
@@ -123,7 +123,7 @@ navigator.serviceWorker.register('serviceworker.js')
         if (subscription) {
             $.ajax({
                 method: 'GET',
-                url: 'wp-content/themes/ebicla/functions/notificationsAPI/api.php',
+                url: 'wp-content/plugins/notifications-plugin/api.php',
                 data: {
                     path: 'RegisterSubscription',
                     params: JSON.stringify(subscription)

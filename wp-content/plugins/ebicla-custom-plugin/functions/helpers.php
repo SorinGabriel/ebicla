@@ -1,8 +1,9 @@
 <?php
+
   /**
-   * Helper Functions
+   * Helpers functions
    *
-   * Helper functions needed in functions.php
+   * Functions used inside the code for different tasks
    *
    * @category   Components
    * @package    WordPress

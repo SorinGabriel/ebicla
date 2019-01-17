@@ -1,0 +1,106 @@
+2019-01-17T11:42:12+00:00 CRITICAL Cannot redeclare Get_Stock_info() (previously declared in /mnt/e/Ubuntu/ebicla/wp-content/plugins/ebicla-custom-plugin/functions.php:129) în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php pe linia 121
+
+2019-01-17T11:42:23+00:00 CRITICAL require_once(): Failed opening required '/mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-17T11:42:25+00:00 CRITICAL require_once(): Failed opening required 'functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-17T11:42:25+00:00 CRITICAL require_once(): Failed opening required 'functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-17T11:42:30+00:00 CRITICAL require_once(): Failed opening required 'functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-17T11:42:32+00:00 CRITICAL require_once(): Failed opening required 'functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-17T11:42:46+00:00 CRITICAL require_once(): Failed opening required 'functions/Helpers.php' (include_path='.:/usr/share/php') în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/functions.php pe linia 17
+
+2019-01-17T11:48:22+00:00 CRITICAL Uncaught Error: Call to undefined function filter_links() in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/products.php:82
+Stack trace:
+#0 /mnt/e/Ubuntu/ebicla/wp-includes/template.php(690): require()
+#1 /mnt/e/Ubuntu/ebicla/wp-includes/template.php(647): load_template('/mnt/e/Ubuntu/e...', false)
+#2 /mnt/e/Ubuntu/ebicla/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/woocommerce/taxonomy-product_cat.php(16): get_template_part('products')
+#4 /mnt/e/Ubuntu/ebicla/wp-includes/template-loader.php(74): include('/mnt/e/Ubuntu/e...')
+#5 /mnt/e/Ubuntu/ebicla/wp-blog-header.php(19): require_once('/mnt/e/Ubuntu/e...')
+#6 /mnt/e/Ubuntu/ebicla/index.php(18): require('/mnt/e/Ubuntu/e...')
+#7 {main}
+  thrown în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/products.php pe linia 82
+
+2019-01-17T11:48:24+00:00 CRITICAL Uncaught Error: Call to undefined function filter_links() in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/products.php:82
+Stack trace:
+#0 /mnt/e/Ubuntu/ebicla/wp-includes/template.php(690): require()
+#1 /mnt/e/Ubuntu/ebicla/wp-includes/template.php(647): load_template('/mnt/e/Ubuntu/e...', false)
+#2 /mnt/e/Ubuntu/ebicla/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/woocommerce/taxonomy-product_cat.php(16): get_template_part('products')
+#4 /mnt/e/Ubuntu/ebicla/wp-includes/template-loader.php(74): include('/mnt/e/Ubuntu/e...')
+#5 /mnt/e/Ubuntu/ebicla/wp-blog-header.php(19): require_once('/mnt/e/Ubuntu/e...')
+#6 /mnt/e/Ubuntu/ebicla/index.php(18): require('/mnt/e/Ubuntu/e...')
+#7 {main}
+  thrown în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/products.php pe linia 82
+
+2019-01-17T11:49:09+00:00 CRITICAL Uncaught Error: Call to undefined function filter_links() in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/products.php:82
+Stack trace:
+#0 /mnt/e/Ubuntu/ebicla/wp-includes/template.php(690): require()
+#1 /mnt/e/Ubuntu/ebicla/wp-includes/template.php(647): load_template('/mnt/e/Ubuntu/e...', false)
+#2 /mnt/e/Ubuntu/ebicla/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/woocommerce/taxonomy-product_cat.php(16): get_template_part('products')
+#4 /mnt/e/Ubuntu/ebicla/wp-includes/template-loader.php(74): include('/mnt/e/Ubuntu/e...')
+#5 /mnt/e/Ubuntu/ebicla/wp-blog-header.php(19): require_once('/mnt/e/Ubuntu/e...')
+#6 /mnt/e/Ubuntu/ebicla/index.php(18): require('/mnt/e/Ubuntu/e...')
+#7 {main}
+  thrown în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/products.php pe linia 82
+
+2019-01-17T11:49:39+00:00 CRITICAL Uncaught Error: Call to undefined function Get_Stock_info() in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php:65
+Stack trace:
+#0 /mnt/e/Ubuntu/ebicla/wp-includes/template-loader.php(74): include()
+#1 /mnt/e/Ubuntu/ebicla/wp-blog-header.php(19): require_once('/mnt/e/Ubuntu/e...')
+#2 /mnt/e/Ubuntu/ebicla/index.php(18): require('/mnt/e/Ubuntu/e...')
+#3 {main}
+  thrown în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php pe linia 65
+
+2019-01-17T11:51:46+00:00 CRITICAL Uncaught Error: Call to undefined function Get_Stock_info() in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php:65
+Stack trace:
+#0 /mnt/e/Ubuntu/ebicla/wp-includes/template-loader.php(74): include()
+#1 /mnt/e/Ubuntu/ebicla/wp-blog-header.php(19): require_once('/mnt/e/Ubuntu/e...')
+#2 /mnt/e/Ubuntu/ebicla/index.php(18): require('/mnt/e/Ubuntu/e...')
+#3 {main}
+  thrown în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php pe linia 65
+
+2019-01-17T11:52:38+00:00 CRITICAL Uncaught Error: Call to undefined function Get_Stock_info() in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php:65
+Stack trace:
+#0 /mnt/e/Ubuntu/ebicla/wp-includes/template-loader.php(74): include()
+#1 /mnt/e/Ubuntu/ebicla/wp-blog-header.php(19): require_once('/mnt/e/Ubuntu/e...')
+#2 /mnt/e/Ubuntu/ebicla/index.php(18): require('/mnt/e/Ubuntu/e...')
+#3 {main}
+  thrown în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php pe linia 65
+
+2019-01-17T11:52:47+00:00 CRITICAL Uncaught Error: Call to undefined function Get_Stock_info() in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php:65
+Stack trace:
+#0 /mnt/e/Ubuntu/ebicla/wp-includes/template-loader.php(74): include()
+#1 /mnt/e/Ubuntu/ebicla/wp-blog-header.php(19): require_once('/mnt/e/Ubuntu/e...')
+#2 /mnt/e/Ubuntu/ebicla/index.php(18): require('/mnt/e/Ubuntu/e...')
+#3 {main}
+  thrown în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php pe linia 65
+
+2019-01-17T11:52:59+00:00 CRITICAL Uncaught Error: Call to undefined function Get_Stock_info() in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php:65
+Stack trace:
+#0 /mnt/e/Ubuntu/ebicla/wp-includes/template-loader.php(74): include()
+#1 /mnt/e/Ubuntu/ebicla/wp-blog-header.php(19): require_once('/mnt/e/Ubuntu/e...')
+#2 /mnt/e/Ubuntu/ebicla/index.php(18): require('/mnt/e/Ubuntu/e...')
+#3 {main}
+  thrown în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php pe linia 65
+
+2019-01-17T11:53:55+00:00 CRITICAL Uncaught Error: Call to undefined function Get_Stock_info() in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php:65
+Stack trace:
+#0 /mnt/e/Ubuntu/ebicla/wp-includes/template-loader.php(74): include()
+#1 /mnt/e/Ubuntu/ebicla/wp-blog-header.php(19): require_once('/mnt/e/Ubuntu/e...')
+#2 /mnt/e/Ubuntu/ebicla/index.php(18): require('/mnt/e/Ubuntu/e...')
+#3 {main}
+  thrown în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php pe linia 65
+
+2019-01-17T11:54:35+00:00 CRITICAL Uncaught Error: Call to undefined function Get_Stock_info() in /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php:65
+Stack trace:
+#0 /mnt/e/Ubuntu/ebicla/wp-includes/template-loader.php(74): include()
+#1 /mnt/e/Ubuntu/ebicla/wp-blog-header.php(19): require_once('/mnt/e/Ubuntu/e...')
+#2 /mnt/e/Ubuntu/ebicla/index.php(18): require('/mnt/e/Ubuntu/e...')
+#3 {main}
+  thrown în /mnt/e/Ubuntu/ebicla/wp-content/themes/ebicla/homepage.php pe linia 65
+
