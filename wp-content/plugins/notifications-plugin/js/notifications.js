@@ -44,7 +44,7 @@ function urlB64ToUint8Array(base64String) {
 }
 
 if ('serviceWorker' in navigator && 'PushManager' in window) {
-    navigator.serviceWorker.register('wp-content/plugins/notifications-plugin/serviceworker.js')
+    navigator.serviceWorker.register('wp-content/plugins/notifications-plugin/js/serviceworker.js')
     .then(function(swReg) {
         swRegistration = swReg;
     })
@@ -97,7 +97,7 @@ function updateBtn() {
     }
 }
 
-navigator.serviceWorker.register('wp-content/plugins/notifications-plugin/serviceworker.js')
+navigator.serviceWorker.register('wp-content/plugins/notifications-plugin/js/serviceworker.js')
     .then(function(swReg) {
         swRegistration = swReg;
         initializeUI();
