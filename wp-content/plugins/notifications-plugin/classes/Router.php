@@ -1,19 +1,32 @@
 <?php
 
   /**
-   * Router
+   * [name]
    *
-   * Connections between the urls and the classes
+   * [name] file for the theme.
    *
    * @category   Components
    * @package    WordPress
-   * @subpackage NotificationsAPI
+   * @subpackage Ebicla
    * @author     Marica Sorin-Gabriel <sorinmarica4@gmail.com>
    * @license    https://www.gnu.org/licenses/gpl-3.0.txt GNU/GPLv3
    * @link       https://ebicla.ro
    * @since      1.0.0
    */
 
+/**
+ * Router Class
+ *
+ * Creates the paths for the API
+ *
+ * @category   Components
+ * @package    WordPress
+ * @subpackage Ebicla
+ * @author     Marica Sorin-Gabriel <sorinmarica4@gmail.com>
+ * @license    https://www.gnu.org/licenses/gpl-3.0.txt GNU/GPLv3
+ * @link       https://ebicla.ro
+ * @since      1.0.0
+ */
 class Router
 {
     private $_paths;

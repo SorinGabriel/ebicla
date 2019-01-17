@@ -25,8 +25,8 @@ self.addEventListener('push', function(event) {
     const title = 'ebicla.ro';
     const options = {
       body: event.data.text(),
-      icon: 'wp-content/themes/ebicla/images/favicon.png',
-      badge: 'wp-content/themes/ebicla/images/images/logo.png'
+      icon: '../../../themes/ebicla/images/favicon.png',
+      badge: '../../../themes/ebicla/images/images/logo.png'
     };
     event.waitUntil(self.registration.showNotification(title, options));
 });
