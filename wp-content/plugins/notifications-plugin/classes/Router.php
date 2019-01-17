@@ -1,9 +1,7 @@
 <?php
 
   /**
-   * [name]
-   *
-   * [name] file for the theme.
+   * Router File class
    *
    * @category   Components
    * @package    WordPress

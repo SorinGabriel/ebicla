@@ -5,6 +5,8 @@ index.php
 wp-admin/
 wp-includes/
 wp-content/plugins/*
+phpunit
+tests
 
 #except 
 !wp-content/plugins/ebicla-custom-plugin/

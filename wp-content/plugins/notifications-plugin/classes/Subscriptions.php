@@ -1,7 +1,7 @@
 <?php
 
   /**
-   * Subscription Class
+   * Subscription File Class
    *
    * @category   Components
    * @package    WordPress
@@ -37,7 +37,9 @@ class Subscriptions
      */
     public function __construct() 
     {
-        $this->_conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
+        global $wpdb;
+        var_dump($wpdb);
+        $this->_conn = new PDO("mysql:host=" . $wpdb->dbhost . ";dbname=" . $wpdb->dbname, $wpdb->dbuser, $wpdb->dbpassword);
         $this->_conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         $this->_publicKey = "BHNxH4G6agx-XsPBP-90jxHj9cXbn6vUVqWiDhGPpiJXy8el69RfWOzp5fs_ZJiU6jl8QTxoNdASPOOYXhuKbUw";
