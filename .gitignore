@@ -8,4 +8,6 @@ wp-content/plugins/*
 
 #except 
 !wp-content/plugins/ebicla-custom-plugin/
+!wp-content/plugins/ebicla-custom-plugin/*
 !wp-content/plugins/notifications-plugin/
+!wp-content/plugins/notifications-plugin/*
