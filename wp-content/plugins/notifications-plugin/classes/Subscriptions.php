@@ -38,7 +38,6 @@ class Subscriptions
     public function __construct() 
     {
         global $wpdb;
-        var_dump($wpdb);
         $this->_conn = new PDO("mysql:host=" . $wpdb->dbhost . ";dbname=" . $wpdb->dbname, $wpdb->dbuser, $wpdb->dbpassword);
         $this->_conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

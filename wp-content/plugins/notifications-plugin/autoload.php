@@ -13,7 +13,7 @@
    * @since      1.0.0
    */
 
-    require_once '../../../wp-config.php';
+    require_once __DIR__ . '/../../../wp-config.php';
 
     spl_autoload_register(
         function ($class_name) {
