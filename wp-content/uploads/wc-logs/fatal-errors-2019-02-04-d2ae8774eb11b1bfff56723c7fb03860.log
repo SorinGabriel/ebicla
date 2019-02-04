@@ -1,0 +1,4 @@
+2019-02-04T18:51:25+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 1400159338616 bytes) în /mnt/e/Ubuntu/ebicla/wp-content/plugins/woocommerce-pdf-invoices-packing-slips/includes/documents/class-wcpdf-invoice.php pe linia 33
+
+2019-02-04T18:51:27+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 1400159338616 bytes) în /mnt/e/Ubuntu/ebicla/wp-content/plugins/woocommerce-pdf-invoices-packing-slips/includes/documents/class-wcpdf-invoice.php pe linia 33
+

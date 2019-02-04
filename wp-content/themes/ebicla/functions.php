@@ -47,8 +47,8 @@ function Wpt_Register_js()
     wp_register_script('material.min', 'https://code.getmdl.io/1.2.1/material.min.js', 'material');
     wp_enqueue_script('material.min');
 
-    wp_register_script('state.js', get_template_directory_uri() . '/js/states.js', 'state');
-    wp_enqueue_script('state.js');
+    // wp_register_script('state.js', get_template_directory_uri() . '/js/states.js', 'state');
+    // wp_enqueue_script('state.js');
 
     wp_register_script('website.js', get_template_directory_uri() . '/js/website.js', 'website');
     wp_enqueue_script('website.js');
